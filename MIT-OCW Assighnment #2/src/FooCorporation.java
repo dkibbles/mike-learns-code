@@ -13,7 +13,6 @@ public class FooCorporation {
 	}
 				
 	public void payCalc(double basePay, double hrsWorked) {		
-		// left off working on the logic of this method.
 		overtimeHrs = (hrsWorked - 40);
 		
 		if (hrsWorked > 40 && basePay > 8.00) {
