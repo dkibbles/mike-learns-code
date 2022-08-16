@@ -15,3 +15,5 @@ Then find where you want our shared code to live on your machine (navigating in 
 Enter git username and the TOKEN instead of your password. Hopefully you should download and see the name of the repo as a directory, and this README. If not, troubleshoot.
 
 Copy your MIT coursework in here, each unit in its own directory. Look up and use commands git add, git commit, and git push to get that code here. Use git status in between each command to understand what you're doing at each stage.
+
+Assignments contained are from: https://ocw.mit.edu/courses/6-092-introduction-to-programming-in-java-january-iap-2010/pages/assignments/
