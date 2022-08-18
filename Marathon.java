@@ -19,6 +19,7 @@ public class Marathon {
 		
 		return smallest;
 	}
+	//Not sure how to make the firstPlace() method return the index instead of the value of the index
 	
 	public static void main (String[] arguments) {
 		
