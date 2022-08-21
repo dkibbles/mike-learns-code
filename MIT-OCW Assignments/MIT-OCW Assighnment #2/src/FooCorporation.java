@@ -33,6 +33,17 @@ public class FooCorporation {
 			
 		}
 	}
+
+	/*if (basePay < 8 || hrsWorked > 60) {
+		error
+	} else {
+		if (hrsWorked > 40) {
+			overtime logic
+		} else {
+			non overtime logic
+		}
+	}
+*/
 	
 	public static void main(String[] args) {
 		
