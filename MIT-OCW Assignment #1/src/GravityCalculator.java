@@ -8,10 +8,6 @@ class GravityCalculator {
 		double finalPosition = 0.0;
 		double formula;
 		
-		/*what type is formula?
-		I'm guessing they expected you to use finalPosition
-		but declaring you're own is fine, just declare with a type
-		delete when changed*/
 		formula = (0.5 * (gravity * (fallingTime * fallingTime) + 
 				(initialVelocity * fallingTime) + initialPosition));
 	
