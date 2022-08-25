@@ -23,7 +23,7 @@ public void returned() {
 // Returns true if the book is rented, false otherwise
 
 public boolean isBorrowed() {
-  if (rented = true) {
+  if (rented == true) {
     return true;
   } else {
     return false;
