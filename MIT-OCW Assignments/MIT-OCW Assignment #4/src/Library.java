@@ -3,7 +3,8 @@ import java.util.ArrayList;
 public class Library {
 
     String address;
-    boolean available;
+    boolean availableForRent;
+    boolean inStock = false;
     ArrayList<Book> books = new ArrayList<Book>();
 
     public Library(String address) {
@@ -19,34 +20,37 @@ public class Library {
     }
 
     public void borrowBook(String title) {
-        if (available == true) {
+        if (availableForRent && inStock == true) {
             System.out.println("You successfully borrowed " + title);
-
-        } else if (available == false) {
+            availableForRent = false;
+        } else if (availableForRent == false && inStock == true) {
             System.out.println("Sorry, this book is already borrowed.");
         } else {
             System.out.println("Sorry, this book is not in our catalog.");
         }
+
     }
 
     public void addBook(Book book) {
         this.books.add( new Book(""));
-        this.available = true;
+        this.availableForRent = true;
+        this.inStock = true;
     }
 
     public void printAvailableBooks() {
         for (int i = 0; i < books.size(); i++) {
-            if (available = true) {
-                System.out.println(books.get(i) + " ");
+            if (availableForRent && inStock == true) {
+                System.out.println( new Book(""));
+            } else {
+                System.out.println("No book in catalog");
             }
         }
-            // use for loop to itterate thruough the book array
            
         }
 
     public void returnBook(String title) {
-            System.out.println("You successfully returned" + title);
-     
+            System.out.println("You successfully returned " + title);
+            availableForRent = true;
     }
 
 
