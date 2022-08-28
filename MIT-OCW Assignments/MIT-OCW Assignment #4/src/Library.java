@@ -1,14 +1,14 @@
+import java.util.ArrayList;
 
-
-public class Library{
+public class Library {
 
     String address;
     boolean available;
-
+    ArrayList<Book> books = new ArrayList<Book>();
 
     public Library(String address) {
         this.address = address;
-    }
+        }
 
     public static void printOpeningHours() {
         System.out.println("Libraries are open daily from 9am to 5pm.");
@@ -20,7 +20,8 @@ public class Library{
 
     public void borrowBook(String title) {
         if (available == true) {
-            System.out.println("You successfully borrowed" + title);
+            System.out.println("You successfully borrowed " + title);
+
         } else if (available == false) {
             System.out.println("Sorry, this book is already borrowed.");
         } else {
@@ -28,14 +29,20 @@ public class Library{
         }
     }
 
-    public void printAvailableBooks() {
-        if (available == true) {
-            System.out.println(title);
-        } else {
-
-        }
-
+    public void addBook(Book book) {
+        this.books.add( new Book(""));
+        this.available = true;
     }
+
+    public void printAvailableBooks() {
+        for (int i = 0; i < books.size(); i++) {
+            if (available = true) {
+                System.out.println(books.get(i) + " ");
+            }
+        }
+            // use for loop to itterate thruough the book array
+           
+        }
 
     public void returnBook(String title) {
             System.out.println("You successfully returned" + title);
@@ -82,4 +89,5 @@ public class Library{
         System.out.println("Books available in the first library:");
         firstLibrary.printAvailableBooks();
         }
-}
+    }
+
