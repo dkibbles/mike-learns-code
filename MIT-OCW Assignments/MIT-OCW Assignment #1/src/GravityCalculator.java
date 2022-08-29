@@ -11,7 +11,7 @@ class GravityCalculator {
 		formula = (0.5 * (gravity * (fallingTime * fallingTime) + 
 				(initialVelocity * fallingTime) + initialPosition));
 	
-		System.out.println("The object's position after " + fallingTime +
+		System.out.println("The rocks position after " + fallingTime +
 		" seconds is " + formula + " m.");
 	 
 	}
