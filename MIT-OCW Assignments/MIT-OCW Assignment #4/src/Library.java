@@ -4,8 +4,9 @@ public class Library {
 
     String address;
     boolean availableForRent;
-    boolean inStock = false;
+    boolean inStock;
     ArrayList<Book> books = new ArrayList<Book>();
+    String title;
 
     public Library(String address) {
         this.address = address;
@@ -33,15 +34,17 @@ public class Library {
 
     public void addBook(Book book) {
         this.books.add( new Book(""));
-        this.availableForRent = true;
-        this.inStock = true;
+        availableForRent = true;
+        inStock = true;
     }
-
+    
     public void printAvailableBooks() {
         for (int i = 0; i < books.size(); i++) {
             if (availableForRent && inStock == true) {
                 System.out.println( new Book(""));
-            } else {
+            } 
+            
+            if (inStock == false) {
                 System.out.println("No book in catalog");
             }
         }
