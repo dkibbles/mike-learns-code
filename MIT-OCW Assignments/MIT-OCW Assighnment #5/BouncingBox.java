@@ -59,6 +59,5 @@ public class BouncingBox {
 
         xDirection = xIncrement;
         yDirection = yIncrement;
-        
     }
 }
