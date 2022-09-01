@@ -3,9 +3,8 @@ import java.util.ArrayList;
 public class Library {
 
     String address;
-    boolean availableForRent;
-    boolean inStock;
-    ArrayList<Book> books = new ArrayList<Book>();
+    ArrayList<Book> availableBooks = new ArrayList<Book>();
+    ArrayList<Book> borrowedBooks = new ArrayList<Book>();
     String title;
 
     public Library(String address) {
@@ -20,40 +19,47 @@ public class Library {
         System.out.println(address);
     }
 
-    public void borrowBook(String title) {
-        if (availableForRent && inStock == true) {
-            System.out.println("You successfully borrowed " + title);
-            availableForRent = false;
-        } else if (availableForRent == false && inStock == true) {
+    public void borrowBook(String bookTitle) {
+
+        if (availableBooks.contains(new Book(""))) {
+            System.out.println("You successfully borrowed " + bookTitle);
+        } else if (borrowedBooks.contains( new Book(""))) {
             System.out.println("Sorry, this book is already borrowed.");
         } else {
             System.out.println("Sorry, this book is not in our catalog.");
         }
 
+        availableBooks.remove( new Book(""));
+        borrowedBooks.add( new Book(""));
     }
 
     public void addBook(Book book) {
-        this.books.add( new Book(""));
-        availableForRent = true;
-        inStock = true;
+        availableBooks.add( new Book(""));
     }
     
+    public String toString() {
+        return title;
+    }
+
     public void printAvailableBooks() {
-        for (int i = 0; i < books.size(); i++) {
-            if (availableForRent && inStock == true) {
-                System.out.println( new Book(""));
-            } 
-            
-            if (inStock == false) {
-                System.out.println("No book in catalog");
-            }
+
+        for (int i = 0; i < availableBooks.size(); i++) {
+            System.out.println(availableBooks.get(i));
+        }
+        if (availableBooks.isEmpty()) {
+            System.out.println("No book in catalog");
         }
            
-        }
+                
+    }
 
-    public void returnBook(String title) {
-            System.out.println("You successfully returned " + title);
-            availableForRent = true;
+    
+
+
+    public void returnBook(String bookTitle) {
+        borrowedBooks.remove( new Book(""));
+        availableBooks.add( new Book(""));
+            System.out.println("You successfully returned " + bookTitle);
     }
 
 
