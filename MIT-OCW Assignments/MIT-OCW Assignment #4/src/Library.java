@@ -22,7 +22,7 @@ public class Library {
     public void borrowBook(String bookTitle) {
 
         if (availableBooks.contains(new Book(""))) {
-            System.out.println("You successfully borrowed " + bookTitle);
+            System.out.println("You successfully borrowed " + title);
         } else if (borrowedBooks.contains( new Book(""))) {
             System.out.println("Sorry, this book is already borrowed.");
         } else {
@@ -35,10 +35,6 @@ public class Library {
 
     public void addBook(Book book) {
         availableBooks.add( new Book(""));
-    }
-    
-    public String toString() {
-        return title;
     }
 
     public void printAvailableBooks() {
