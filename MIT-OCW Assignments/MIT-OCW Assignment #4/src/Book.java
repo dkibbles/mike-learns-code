@@ -1,7 +1,7 @@
 
 public class Book {
 
-String title;
+public String title;
 boolean rented;
 // Creates a new Book
 

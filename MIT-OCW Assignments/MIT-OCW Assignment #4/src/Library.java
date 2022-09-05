@@ -1,14 +1,15 @@
 import java.util.ArrayList;
+import java.util.*;
 
 public class Library {
 
-    String address;
+    String address1;
     ArrayList<Book> availableBooks = new ArrayList<Book>();
     ArrayList<Book> borrowedBooks = new ArrayList<Book>();
     String title;
 
     public Library(String address) {
-        this.address = address;
+        this.address1 = address;
         }
 
     public static void printOpeningHours() {
@@ -16,46 +17,89 @@ public class Library {
     }
 
     public void printAddress() {
-        System.out.println(address);
+        System.out.println(address1);
     }
 
-    public void borrowBook(String bookTitle) {
+    public String borrowBook(String bookTitle) {
 
-        if (availableBooks.contains(new Book(""))) {
-            System.out.println("You successfully borrowed " + title);
-        } else if (borrowedBooks.contains( new Book(""))) {
-            System.out.println("Sorry, this book is already borrowed.");
-        } else {
-            System.out.println("Sorry, this book is not in our catalog.");
+        Book book;
+        String title;
+
+        for(int i = 0; i < availableBooks.size(); i++) {
+            
+            book = availableBooks.get(i);
+            title = book.getTitle();
+
+            if(title.equals(bookTitle)) {
+                if(!(book.isBorrowed())) {
+                    book.rented();
+                    System.out.println("You successfully borrowed " + title);
+                    return null;
+
+                } else {
+                    System.out.println("Sorry, this book is already borrowed.");
+                    return null;
+                }
+            }
+
+
         }
 
-        availableBooks.remove( new Book(""));
-        borrowedBooks.add( new Book(""));
+        System.out.println("Sorry, this book is not in our catalog.");
+        return null;
     }
 
     public void addBook(Book book) {
-        availableBooks.add( new Book(""));
+        availableBooks.add(book);
     }
 
     public void printAvailableBooks() {
 
+        Book book;
+        boolean libraryIsEmpty = true;
+
         for (int i = 0; i < availableBooks.size(); i++) {
-            System.out.println(availableBooks.get(i));
-        }
-        if (availableBooks.isEmpty()) {
+
+            book = availableBooks.get(i);
+
+            if(!(book.isBorrowed())) {
+
+                System.out.println(book.getTitle());
+                libraryIsEmpty = false;
+
+            }
+
+            }
+
+        if (libraryIsEmpty) {
             System.out.println("No book in catalog");
         }
            
-                
     }
 
-    
-
-
     public void returnBook(String bookTitle) {
-        borrowedBooks.remove( new Book(""));
-        availableBooks.add( new Book(""));
-            System.out.println("You successfully returned " + bookTitle);
+        Book book;
+        String title;
+        boolean found = false;
+
+        for(int i = 0; i < availableBooks.size(); i++) {
+
+            book = availableBooks.get(i);
+            title = book.getTitle();
+
+            if(title.equals(bookTitle)) {
+                if(book.isBorrowed()) {
+                    book.returned();
+                    System.out.println("You successfully returned " + title);
+                    found = true;
+                    break;
+                }
+            }
+        }
+
+        if(!found) {
+            System.out.println("Book not found.");
+        }
     }
 
 
