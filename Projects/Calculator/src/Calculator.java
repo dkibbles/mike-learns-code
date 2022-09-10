@@ -10,40 +10,48 @@ public class Calculator implements ActionListener {
 	JFrame frame;
 	JTextField displayWindow;
 	JButton[] numbers;
-	JButton[] functions;
 	JButton equals ;
 	JButton clear;
+	JButton add;
+	JButton sub;
+	JButton mul;
+	JButton div;
+	JButton dec;
 
 	public Calculator() {
 
+		
+		frame = new JFrame("Calculator");
+		displayWindow = new JTextField();
 		numbers = new JButton[10];
 
 		for(int i = 0; i < numbers.length; i++) {
 			numbers[i] = new JButton(String.valueOf(i));
 			numbers[i].addActionListener(this);
-			
+
 		}
-
-		functions = new JButton[5];
-
+		equals = new JButton("=");
+		clear = new JButton("clr");
+		add = new JButton();
+		sub = new JButton();
+		mul = new JButton();
+		div = new JButton();
+		dec = new JButton();
 		
-		
-
-		frame = new JFrame("Calculator");
 		frame.setSize(400,600);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		frame.add(displayWindow);
 		frame.add(equals);
 		frame.add(clear);
+		frame.add(add);
+		frame.add(sub);
+		frame.add(mul);
+		frame.add(div);
+		frame.add(dec);
 
-		displayWindow = new JTextField();
 		displayWindow.setBounds(0,75, 300, 50);
-
-		equals = new JButton("=");
 		equals.setBounds(300, 550, 50, 25);
-
-		clear = new JButton("clr");
 		clear.setBounds(100, 550, 50, 25);
 
 
