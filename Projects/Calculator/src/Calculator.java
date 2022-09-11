@@ -41,17 +41,18 @@ public class Calculator implements ActionListener {
 		dec = new JButton(".");
 		settings = new JButton("S");
 		
-		frame.getContentPane().setPreferredSize(new Dimension(300,400));
+		frame.getContentPane().setPreferredSize(new Dimension(295,304));
 		frame.pack();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
-		frame.setResizable(true);
+		frame.setResizable(false);
 		frame.setLayout(null);
 		frame.add(buttonPanel);
 		frame.add(displayWindow);
+		frame.getContentPane().setBackground(Color.decode("#b1bec5"));
 
-		buttonPanel.setBounds(10, 110, 280, 280);
-		buttonPanel.setBackground(Color.LIGHT_GRAY);
+		buttonPanel.setBounds(10, 84, 275, 210);
+		buttonPanel.setBackground(Color.decode("#343b4a"));
 		buttonPanel.setLayout(null);
 
 		buttonPanel.add(b7);
@@ -79,43 +80,61 @@ public class Calculator implements ActionListener {
 		frame.add(settings);
 
 
-		settings.setBounds(275, 5, 20, 20);
+		settings.setBounds(270, 5, 20, 20);
+		settings.setBackground(Color.decode("#eedeb5"));
 		
-		displayWindow.setBounds(40, 40, 220, 40);
+		displayWindow.setBounds(40, 25, 215, 34);
 
-		b1.setBounds(10, 100, 60, 40);
+		b1.setBounds(10, 88, 60, 34);
+		b1.setBackground(Color.decode("#eedeb5"));
 
-		b2.setBounds(75, 100, 60, 40);
+		b2.setBounds(75, 88, 60, 34);
+		b2.setBackground(Color.decode("#eedeb5"));
 
-		b3.setBounds(140, 100, 60, 40);
+		b3.setBounds(140, 88, 60, 34);
+		b3.setBackground(Color.decode("#eedeb5"));
 
-		b4.setBounds(10, 55, 60, 40);
+		b4.setBounds(10, 49, 60, 34);
+		b4.setBackground(Color.decode("#eedeb5"));
 
-		b5.setBounds(75, 55, 60, 40);
+		b5.setBounds(75, 49, 60, 34);
+		b5.setBackground(Color.decode("#eedeb5"));
 
-		b6.setBounds(140, 55, 60, 40);
+		b6.setBounds(140, 49, 60, 34);
+		b6.setBackground(Color.decode("#eedeb5"));
 
-		b7.setBounds(10, 10, 60, 40);
+		b7.setBounds(10, 10, 60, 34);
+		b7.setBackground(Color.decode("#eedeb5"));
 
-		b8.setBounds(75, 10, 60, 40);
+		b8.setBounds(75, 10, 60, 34);
+		b8.setBackground(Color.decode("#eedeb5"));
 
-		b9.setBounds(140, 10, 60, 40);
+		b9.setBounds(140, 10, 60, 34);
+		b9.setBackground(Color.decode("#eedeb5"));
 
-		b0.setBounds(10, 145, 125, 40);
+		b0.setBounds(10, 127, 60, 34);
+		b0.setBackground(Color.decode("#eedeb5"));
 
-		equals.setBounds(10, 235, 255, 40);
+		equals.setBounds(10, 166, 255, 34);
+		equals.setBackground(Color.decode("#eedeb5"));
 
-		clear.setBounds(10, 190, 255, 40);
+		clear.setBounds(140, 127, 60, 34);
+		clear.setBackground(Color.decode("#eedeb5"));
 
-		add.setBounds(205, 145, 60, 40);
+		add.setBounds(205, 127, 60, 34);
+		add.setBackground(Color.decode("#eedeb5"));
 
-		sub.setBounds(205, 100, 60, 40);
+		sub.setBounds(205, 88, 60, 34);
+		sub.setBackground(Color.decode("#eedeb5"));
 
-		mul.setBounds(205, 55, 60, 40);
+		mul.setBounds(205, 49, 60, 34);
+		mul.setBackground(Color.decode("#eedeb5"));
 
-		div.setBounds(205, 10, 60, 40);
+		div.setBounds(205, 10, 60, 34);
+		div.setBackground(Color.decode("#eedeb5"));
 
-		dec.setBounds(140, 145, 60, 40);
+		dec.setBounds(75, 127, 60, 34);
+		dec.setBackground(Color.decode("#eedeb5"));
 
 
 	}
