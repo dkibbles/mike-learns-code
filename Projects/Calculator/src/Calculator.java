@@ -21,9 +21,9 @@ public class Calculator implements ActionListener {
 	JButton settings;
 	
 
-	HashMap<String,JButton> inputs = new HashMap<String, JButton>();
+	//HashMap<String,JButton> inputs = new HashMap<String, JButton>();
 
-	String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","clr","+","-","*","/",".","S"};
+	//String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","clr","+","-","*","/",".","S"};
 
 	public Calculator() {
 
@@ -32,28 +32,28 @@ public class Calculator implements ActionListener {
 		displayWindow = new JTextField();
 
 		//So you can declare a 
-		// b1 = new JButton("1");
-		// b2 = new JButton("2");
-		// b3 = new JButton("3");
-		// b4 = new JButton("4");
-		// b5 = new JButton("5");
-		// b6 = new JButton("6");
-		// b7 = new JButton("7");
-		// b8 = new JButton("8");
-		// b9 = new JButton("9");
-		// b0 = new JButton("0");
-		// equals = new JButton("=");
-		// clear = new JButton("clr");
-		// add = new JButton("+");
-		// sub = new JButton("-");
-		// mul = new JButton("*");
-		// div = new JButton("/");
-		// dec = new JButton(".");
-		// settings = new JButton("S");
+		b1 = new JButton("1");
+		b2 = new JButton("2");
+		b3 = new JButton("3");
+		b4 = new JButton("4");
+		b5 = new JButton("5");
+		b6 = new JButton("6");
+		b7 = new JButton("7");
+		b8 = new JButton("8");
+		b9 = new JButton("9");
+		b0 = new JButton("0");
+		equals = new JButton("=");
+		clear = new JButton("clr");
+		add = new JButton("+");
+		sub = new JButton("-");
+		mul = new JButton("*");
+		div = new JButton("/");
+		dec = new JButton(".");
+		settings = new JButton("S");
 
-		for(int i = 0; i < CALC_BUTTONS.length; i++) {
-			inputs.put(CALC_BUTTONS[i], new JButton(CALC_BUTTONS[i]));
-		}
+		// for(int i = 0; i < CALC_BUTTONS.length; i++) {
+		// 	inputs.put(CALC_BUTTONS[i], new JButton(CALC_BUTTONS[i]));
+		// }
 		
 		frame.getContentPane().setPreferredSize(new Dimension(295,304));
 		frame.pack();
@@ -69,34 +69,34 @@ public class Calculator implements ActionListener {
 		buttonPanel.setBackground(Color.decode("#343b4a"));
 		buttonPanel.setLayout(null);
 
-		// buttonPanel.add(b7);
-		// buttonPanel.add(b8);
-		// buttonPanel.add(b9);
-		// buttonPanel.add(div);
+		buttonPanel.add(b7);
+		buttonPanel.add(b8);
+		buttonPanel.add(b9);
+		buttonPanel.add(div);
 
-		// buttonPanel.add(b4);
-		// buttonPanel.add(b5);
-		// buttonPanel.add(b6);
-		// buttonPanel.add(mul);
+		buttonPanel.add(b4);
+		buttonPanel.add(b5);
+		buttonPanel.add(b6);
+		buttonPanel.add(mul);
 
-		// buttonPanel.add(b1);
-		// buttonPanel.add(b2);
-		// buttonPanel.add(b3);
-		// buttonPanel.add(sub);
+		buttonPanel.add(b1);
+		buttonPanel.add(b2);
+		buttonPanel.add(b3);
+		buttonPanel.add(sub);
 
-		// buttonPanel.add(b0);
-		// buttonPanel.add(dec);
-		// buttonPanel.add(add);
+		buttonPanel.add(b0);
+		buttonPanel.add(dec);
+		buttonPanel.add(add);
 
-		// buttonPanel.add(equals);
-		// buttonPanel.add(clear);
+		buttonPanel.add(equals);
+		buttonPanel.add(clear);
 		
-		inputs.forEach((name, button) -> buttonPanel.add(button));
+		//inputs.forEach((name, button) -> buttonPanel.add(button));
 
 
 
-		frame.add(inputs.get("S"));
-
+		//frame.add(inputs.get("S"));
+		frame.add(settings);
 
 		inputs.get("S").setBounds(270, 5, 20, 20);
 		inputs.get("S").setBackground(Color.decode("#eedeb5"));
