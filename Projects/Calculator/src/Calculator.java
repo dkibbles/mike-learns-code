@@ -3,6 +3,7 @@ import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -16,6 +17,7 @@ public class Calculator implements ActionListener {
 	JButton equals, clear, add, sub, mul, div, dec;
 	JButton settings;
 	JPanel buttonPanel, displayWindowPanel;
+	ImageIcon settingsIcon;
 
 	public Calculator() {
 
@@ -40,6 +42,7 @@ public class Calculator implements ActionListener {
 		div = new JButton("/");
 		dec = new JButton(".");
 		settings = new JButton("S");
+		settingsIcon = new ImageIcon("settingsicon.jpg");
 		
 		frame.getContentPane().setPreferredSize(new Dimension(295,304));
 		frame.pack();
@@ -82,6 +85,7 @@ public class Calculator implements ActionListener {
 
 		settings.setBounds(270, 5, 20, 20);
 		settings.setBackground(Color.decode("#eedeb5"));
+		settings.setIcon(settingsIcon);
 		
 		displayWindow.setBounds(40, 25, 215, 34);
 
@@ -117,6 +121,7 @@ public class Calculator implements ActionListener {
 
 		equals.setBounds(10, 166, 255, 34);
 		equals.setBackground(Color.decode("#eedeb5"));
+		equals.setFocusable(false);
 
 		clear.setBounds(140, 127, 60, 34);
 		clear.setBackground(Color.decode("#eedeb5"));
