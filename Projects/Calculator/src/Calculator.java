@@ -8,16 +8,13 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
-import javax.swing.JMenuBar;
-import javax.swing.JMenu;
 
 public class Calculator implements ActionListener {
 
 	JFrame FRAME;
 	JTextField DISPLAY_WINDOW;
 	JPanel BUTTON_PANEL;
-	JMenuBar MENU;
-	JMenu SETTINGS_PAGE;
+	JButton SETTINGS_PAGE;
 	HashMap<String,JButton> INPUTS = new HashMap<String, JButton>();
 	String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","clr","+","-","*","/","."};
 
@@ -26,8 +23,7 @@ public class Calculator implements ActionListener {
 		FRAME = new JFrame("Calculator");
 		DISPLAY_WINDOW = new JTextField();
 		BUTTON_PANEL = new JPanel();
-		MENU = new JMenuBar();
-		SETTINGS_PAGE = new JMenu("Settings");
+		SETTINGS_PAGE = new JButton("S");
 
 		for(int i = 0; i < CALC_BUTTONS.length; i++) {
 			INPUTS.put(CALC_BUTTONS[i], new JButton(CALC_BUTTONS[i]));
@@ -41,17 +37,20 @@ public class Calculator implements ActionListener {
 		FRAME.setLayout(null);
 		FRAME.add(BUTTON_PANEL);
 		FRAME.add(DISPLAY_WINDOW);
+		FRAME.add(SETTINGS_PAGE);
+		
 		FRAME.getContentPane().setBackground(Color.decode("#b1bec5"));
 	
-		DISPLAY_WINDOW.setBounds(40, 15, 215, 34);
+		DISPLAY_WINDOW.setBounds(35, 25, 225, 34);
 
 		BUTTON_PANEL.setBounds(10, 84, 275, 210);
 		BUTTON_PANEL.setBackground(Color.decode("#343b4a"));
 		BUTTON_PANEL.setLayout(null);
 
-		MENU.add(SETTINGS_PAGE);
-		FRAME.setJMenuBar(MENU);
-		MENU.setVisible(true);
+		SETTINGS_PAGE.setBounds(265, 5, 25, 25);
+		SETTINGS_PAGE.setBackground(Color.decode("#eedeb5"));
+		SETTINGS_PAGE.addActionListener(this);
+		SETTINGS_PAGE.setFocusable(false);
 
 		INPUTS.get("1").setBounds(10, 88, 60, 34);
 		INPUTS.get("2").setBounds(75, 88, 60, 34);
@@ -72,7 +71,9 @@ public class Calculator implements ActionListener {
 		INPUTS.get(".").setBounds(75, 127, 60, 34);
 		INPUTS.forEach((name, button) -> {
 			BUTTON_PANEL.add(button);
+			button.addActionListener(this);
 			button.setBackground(Color.decode("#eedeb5"));
+			button.setFocusable(false);
 		});
 	}
 
