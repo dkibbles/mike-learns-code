@@ -10,7 +10,7 @@ import java.awt.Dimension;
 
 public class SettingsPage {
 
-    JFrame FRAME;
+    JFrame SFRAME;
     JPanel MAIN;
 
     String[] SETTINGS_BUTTONS;
@@ -24,14 +24,20 @@ public class SettingsPage {
 
     SettingsPage() {
 
-         FRAME = new JFrame("Settings");
+         SFRAME = new JFrame("Settings");
          MAIN = new JPanel();
 
-         FRAME.getContentPane().setPreferredSize(new Dimension(295, 304));
-         FRAME.add(MAIN);
+         SFRAME.getContentPane().setPreferredSize(new Dimension(295, 304));
+         SFRAME.pack();
+         SFRAME.setResizable(false);
+         SFRAME.setLayout(null);
+         SFRAME.add(MAIN);
+         SFRAME.setVisible(true);
+         SFRAME.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         SFRAME.getContentPane().setBackground(Color.decode("#b1bec5"));
 
-         MAIN.setBounds(10,10, 285, 294);
-         MAIN.setBackground(Color.LIGHT_GRAY);
+         MAIN.setBounds(10,10, 275, 284);
+         MAIN.setBackground(Color.decode("#343b4a"));
 
     }
 

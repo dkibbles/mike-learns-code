@@ -1,5 +1,6 @@
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
@@ -9,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Calculator implements ActionListener {
+public class Calculator implements ActionListener  {
 
 	JFrame FRAME;
 	JTextField DISPLAY_WINDOW;
@@ -42,6 +43,8 @@ public class Calculator implements ActionListener {
 		FRAME.getContentPane().setBackground(Color.decode("#b1bec5"));
 	
 		DISPLAY_WINDOW.setBounds(35, 25, 225, 34);
+		DISPLAY_WINDOW.setVisible(true);
+		DISPLAY_WINDOW.setFont(new Font("Serif",Font.PLAIN, 16));
 
 		BUTTON_PANEL.setBounds(10, 84, 275, 210);
 		BUTTON_PANEL.setBackground(Color.decode("#343b4a"));
@@ -77,15 +80,46 @@ public class Calculator implements ActionListener {
 		});
 	}
 
+	public void clear() {
+		DISPLAY_WINDOW.setText("");
+	}
+
+	public double operations() {
+		double temp = 0;
+		return temp;
+	}
+
 	public static void main(String[] args) {
 		
 		new Calculator();
-		
-		new SettingsPage();
+
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		
+		INPUTS.forEach((name, button) -> {
+
+			if(e.getSource() == button) {
+				switch(name) {
+					case "clr":
+						clear();
+						break;
+					case "=":
+
+						break;
+					default:
+						DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(name)));
+					
+				}
+				
+			}
+
+			if(e.getSource() == SETTINGS_PAGE) {
+				SettingsPage settingsPage = new SettingsPage();
+			}
+		});
+
 		
 		
 	}
