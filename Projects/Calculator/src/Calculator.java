@@ -47,7 +47,7 @@ public class Calculator implements ActionListener  {
 	
 		DISPLAY_WINDOW.setBounds(35, 25, 225, 34);
 		DISPLAY_WINDOW.setVisible(true);
-		DISPLAY_WINDOW.setFont(new Font("Serif",Font.PLAIN, 16));
+		DISPLAY_WINDOW.setFont(new Font("Serif",Font.BOLD, 18));
 
 		BUTTON_PANEL.setBounds(10, 84, 275, 210);
 		BUTTON_PANEL.setBackground(Color.decode("#343b4a"));
