@@ -116,7 +116,10 @@ public class Calculator implements ActionListener  {
 			}
 
 			if(e.getSource() == SETTINGS_PAGE) {
+
+				FRAME.dispose();
 				SettingsPage settingsPage = new SettingsPage();
+
 			}
 		});
 
