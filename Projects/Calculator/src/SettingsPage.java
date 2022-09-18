@@ -32,7 +32,6 @@ public class SettingsPage implements ActionListener {
          SFRAME.setLayout(null);
          SFRAME.add(MAIN);
          SFRAME.setVisible(true);
-         SFRAME.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
          SFRAME.getContentPane().setBackground(Color.decode("#b1bec5"));
 
          MAIN.setBounds(10,10, 275, 284);
@@ -62,8 +61,9 @@ public class SettingsPage implements ActionListener {
             if(e.getSource() == button) {
                 switch(name) {
                     case "C":
-                    SFRAME.dispose();
-                    new Calculator();
+                        SFRAME.dispose();
+                        new Calculator();
+        
                 }
             }
         });
