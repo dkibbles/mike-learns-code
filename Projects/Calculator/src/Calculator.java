@@ -96,36 +96,55 @@ public class Calculator implements ActionListener  {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-
 		INPUTS.forEach((name, button) -> {
 
 			if(e.getSource() == button) {
-
 				switch(name) {
+					case "/":
+						var1 = Double.parseDouble(DISPLAY_WINDOW.getText());
+						operator = '/';
+						DISPLAY_WINDOW.setText(String.valueOf(""));
+					break;
+					case "*":
+						var1 = Double.parseDouble(DISPLAY_WINDOW.getText());
+						operator = '*';
+						DISPLAY_WINDOW.setText(String.valueOf(""));
+					break;
+					case "-":
+						var1 = Double.parseDouble(DISPLAY_WINDOW.getText());
+						operator = '-';
+						DISPLAY_WINDOW.setText(String.valueOf(""));
+					break;
 					case "+":
 						var1 = Double.parseDouble(DISPLAY_WINDOW.getText());
 						operator = '+';
+						DISPLAY_WINDOW.setText(String.valueOf(""));
 					break;
-					case "=":	
+					case "=":
 						var2 = Double.parseDouble(DISPLAY_WINDOW.getText());
-						DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(result)));
+
 						switch(operator) {
+							case '/':
+								result = var1/var2;
+							break;
+							case '*':
+								result = var1*var2;
+							break;
+							case '-':
+								result = var1-var2;
+							break;
 							case '+':
-								DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(name)));
 								result = var1+var2;
 							break;
-
-							
 						}
+
+						DISPLAY_WINDOW.setText(String.valueOf(result));
 					break;
 					case "clr":
 						clear();
 					break;
-					default:
-						DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(name)));
-					
+					default: DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(name)));
 				}
-				
 			}
 
 			if(e.getSource() == SETTINGS_PAGE) {
