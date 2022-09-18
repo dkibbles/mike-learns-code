@@ -3,8 +3,6 @@ import javax.swing.JPanel;
 import java.util.HashMap;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JComboBox;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
@@ -21,13 +19,12 @@ public class SettingsPage implements ActionListener {
     
     HashMap<String,JButton> BUTTON_INPUTS;
     HashMap<String, JLabel> LABEL_INPUTS;
-    HashMap<String, JComboBox> COMBOBOX_INPUTS;
-
 
     SettingsPage() {
 
          SFRAME = new JFrame("Settings");
          MAIN = new JPanel();
+         BUTTON_INPUTS = new HashMap<>();
 
          SFRAME.getContentPane().setPreferredSize(new Dimension(295, 304));
          SFRAME.pack();
@@ -54,14 +51,22 @@ public class SettingsPage implements ActionListener {
 			button.setFocusable(false);
 		});
 
-        BUTTON_INPUTS.get("C").setBounds(265, 5, 25, 25);
+        BUTTON_INPUTS.get("C").setBounds(245, 5, 25, 25);
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        
+    
+        BUTTON_INPUTS.forEach((name, button) -> {
+            if(e.getSource() == button) {
+                switch(name) {
+                    case "C":
+                    SFRAME.dispose();
+                    new Calculator();
+                }
+            }
+        });
     }
 
 }

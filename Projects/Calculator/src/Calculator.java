@@ -18,6 +18,10 @@ public class Calculator implements ActionListener  {
 	JButton SETTINGS_PAGE;
 	HashMap<String,JButton> INPUTS = new HashMap<String, JButton>();
 	String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","clr","+","-","*","/","."};
+	double var1 = 0;
+	double var2 = 0; 
+	double result = 0;
+	char operator;
 
 	public Calculator() {
 
@@ -39,7 +43,6 @@ public class Calculator implements ActionListener  {
 		FRAME.add(BUTTON_PANEL);
 		FRAME.add(DISPLAY_WINDOW);
 		FRAME.add(SETTINGS_PAGE);
-		
 		FRAME.getContentPane().setBackground(Color.decode("#b1bec5"));
 	
 		DISPLAY_WINDOW.setBounds(35, 25, 225, 34);
@@ -84,11 +87,6 @@ public class Calculator implements ActionListener  {
 		DISPLAY_WINDOW.setText("");
 	}
 
-	public double operations() {
-		double temp = 0;
-		return temp;
-	}
-
 	public static void main(String[] args) {
 		
 		new Calculator();
@@ -98,16 +96,31 @@ public class Calculator implements ActionListener  {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
+
 		INPUTS.forEach((name, button) -> {
 
 			if(e.getSource() == button) {
+
 				switch(name) {
+					case "+":
+						var1 = Double.parseDouble(DISPLAY_WINDOW.getText());
+						operator = '+';
+					break;
+					case "=":	
+						var2 = Double.parseDouble(DISPLAY_WINDOW.getText());
+						DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(result)));
+						switch(operator) {
+							case '+':
+								DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(name)));
+								result = var1+var2;
+							break;
+
+							
+						}
+					break;
 					case "clr":
 						clear();
-						break;
-					case "=":
-
-						break;
+					break;
 					default:
 						DISPLAY_WINDOW.setText(DISPLAY_WINDOW.getText().concat(String.valueOf(name)));
 					
@@ -118,9 +131,11 @@ public class Calculator implements ActionListener  {
 			if(e.getSource() == SETTINGS_PAGE) {
 
 				FRAME.dispose();
-				SettingsPage settingsPage = new SettingsPage();
+				new SettingsPage();
 
 			}
+
+
 		});
 
 		
