@@ -29,12 +29,13 @@ public class Calculator implements ActionListener  {
 	double RESULT = 0;
 	char OPERATOR;
 
-	CardLayout LAYOUT = new CardLayout();
+	CardLayout LAYOUT;
 
 	public Calculator() {
 
 		FRAME = new JFrame("Calculator");
-		CONTAINER = new JPanel();
+		CONTAINER = new JPanel(new CardLayout());
+		LAYOUT = new CardLayout();
 		CALCULATOR = new JPanel();
 		BUTTON_PANEL = new JPanel();
 		SETTINGS = new JPanel();
@@ -83,6 +84,7 @@ public class Calculator implements ActionListener  {
 		SETTINGS.setBounds(0, 0, 295, 304);
 		SETTINGS.setBackground(Color.decode("#b1bec5"));
 		SETTINGS.setVisible(true);
+		SETTINGS.setLayout(null);
 		SETTINGS.add(SETTINGS_BUTTON_PANEL);
 
 		SETTINGS_BUTTON_PANEL.setBounds(10, 10, 275, 284);
