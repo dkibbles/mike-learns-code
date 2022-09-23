@@ -61,7 +61,6 @@ public class Calculator implements ActionListener  {
 
 		CALCULATOR.setBounds(0, 0, 295, 304);
 		CALCULATOR.setBackground(Color.decode("#b1bec5"));
-		CALCULATOR.setVisible(true);
 		CALCULATOR.setLayout(null);
 		CALCULATOR.add(DISPLAY_WINDOW);
 		CALCULATOR.add(BUTTON_PANEL);
@@ -92,27 +91,6 @@ public class Calculator implements ActionListener  {
 		SETTINGS_BUTTON_PANEL.setVisible(true);
         SETTINGS_BUTTON_PANEL.setLayout(null);
 
-        BUTTON_INPUTS.get("C").setBounds(245, 5, 25, 25);
-	
-
-		INPUTS.get("1").setBounds(10, 88, 60, 34);
-		INPUTS.get("2").setBounds(75, 88, 60, 34);
-		INPUTS.get("3").setBounds(140, 88, 60, 34);
-		INPUTS.get("4").setBounds(10, 49, 60, 34);
-		INPUTS.get("5").setBounds(75, 49, 60, 34);
-		INPUTS.get("6").setBounds(140, 49, 60, 34);
-		INPUTS.get("7").setBounds(10, 10, 60, 34);
-		INPUTS.get("8").setBounds(75, 10, 60, 34);
-		INPUTS.get("9").setBounds(140, 10, 60, 34);
-		INPUTS.get("0").setBounds(10, 127, 60, 34);
-		INPUTS.get("=").setBounds(10, 166, 255, 34);
-		INPUTS.get("clr").setBounds(140, 127, 60, 34);
-		INPUTS.get("+").setBounds(205, 127, 60, 34);
-		INPUTS.get("-").setBounds(205, 88, 60, 34);
-		INPUTS.get("*").setBounds(205, 49, 60, 34);
-		INPUTS.get("/").setBounds(205, 10, 60, 34);
-		INPUTS.get(".").setBounds(75, 127, 60, 34);
-
 		for(int i = 0; i < CALC_BUTTONS.length; i++) {
 			INPUTS.put(CALC_BUTTONS[i], new JButton(CALC_BUTTONS[i]));
 		}
@@ -135,6 +113,27 @@ public class Calculator implements ActionListener  {
 			button.setBackground(Color.decode("#eedeb5"));
 			button.setFocusable(false);
 		});
+
+		BUTTON_INPUTS.get("C").setBounds(245, 5, 25, 25);
+
+		INPUTS.get("1").setBounds(10, 88, 60, 34);
+		INPUTS.get("2").setBounds(75, 88, 60, 34);
+		INPUTS.get("3").setBounds(140, 88, 60, 34);
+		INPUTS.get("4").setBounds(10, 49, 60, 34);
+		INPUTS.get("5").setBounds(75, 49, 60, 34);
+		INPUTS.get("6").setBounds(140, 49, 60, 34);
+		INPUTS.get("7").setBounds(10, 10, 60, 34);
+		INPUTS.get("8").setBounds(75, 10, 60, 34);
+		INPUTS.get("9").setBounds(140, 10, 60, 34);
+		INPUTS.get("0").setBounds(10, 127, 60, 34);
+		INPUTS.get("=").setBounds(10, 166, 255, 34);
+		INPUTS.get("clr").setBounds(140, 127, 60, 34);
+		INPUTS.get("+").setBounds(205, 127, 60, 34);
+		INPUTS.get("-").setBounds(205, 88, 60, 34);
+		INPUTS.get("*").setBounds(205, 49, 60, 34);
+		INPUTS.get("/").setBounds(205, 10, 60, 34);
+		INPUTS.get(".").setBounds(75, 127, 60, 34);
+
 	}
 
 	public static void main(String[] args) {
@@ -200,7 +199,6 @@ public class Calculator implements ActionListener  {
 			if(e.getSource() == SETTINGS_PAGE) {
 				LAYOUT.show(CONTAINER, "2");
 			}
-
 
 		});
 
