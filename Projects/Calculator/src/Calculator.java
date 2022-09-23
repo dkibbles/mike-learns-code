@@ -11,18 +11,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Calculator implements ActionListener  {
+public class Calculator extends SettingsPage implements ActionListener  {
 
 	JFrame FRAME;
 	JTextField DISPLAY_WINDOW; 
-	JPanel CALCULATOR, BUTTON_PANEL, SETTINGS, SETTINGS_BUTTON_PANEL;
-	JPanel CONTAINER;
+	JPanel CONTAINER, CALCULATOR, BUTTON_PANEL;
 	JButton SETTINGS_PAGE;
 	HashMap<String,JButton> INPUTS;
-	HashMap<String,JButton> BUTTON_INPUTS;
 
 	String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","clr","+","-","*","/","."};
-	String[] SETTINGS_BUTTONS = {"C"};
 
 	double VARABLE1 = 0;
 	double VARABLE2 = 0; 
@@ -38,13 +35,10 @@ public class Calculator implements ActionListener  {
 		LAYOUT = new CardLayout();
 		CALCULATOR = new JPanel();
 		BUTTON_PANEL = new JPanel();
-		SETTINGS = new JPanel();
-		SETTINGS_BUTTON_PANEL = new JPanel();
 		DISPLAY_WINDOW = new JTextField();
 		SETTINGS_PAGE = new JButton("S");
 
 		INPUTS = new HashMap<>();
-		BUTTON_INPUTS = new HashMap<>();
 
 		FRAME.getContentPane().setPreferredSize(new Dimension(295,304));
 		FRAME.pack();
@@ -56,7 +50,8 @@ public class Calculator implements ActionListener  {
 		CONTAINER.setBounds(0,0, 295, 304);
         CONTAINER.setLayout(LAYOUT);
         CONTAINER.add(CALCULATOR, "1");
-		CONTAINER.add(SETTINGS, "2");
+		CONTAINER.add(settings, "2");
+
 		LAYOUT.show(CONTAINER, "1");
 
 		CALCULATOR.setBounds(0, 0, 295, 304);
@@ -80,16 +75,7 @@ public class Calculator implements ActionListener  {
 		SETTINGS_PAGE.addActionListener(this);
 		SETTINGS_PAGE.setFocusable(false);
 
-		SETTINGS.setBounds(0, 0, 295, 304);
-		SETTINGS.setBackground(Color.decode("#b1bec5"));
-		SETTINGS.setVisible(true);
-		SETTINGS.setLayout(null);
-		SETTINGS.add(SETTINGS_BUTTON_PANEL);
-
-		SETTINGS_BUTTON_PANEL.setBounds(10, 10, 275, 284);
-        SETTINGS_BUTTON_PANEL.setBackground(Color.decode("#343b41"));
-		SETTINGS_BUTTON_PANEL.setVisible(true);
-        SETTINGS_BUTTON_PANEL.setLayout(null);
+		
 
 		for(int i = 0; i < CALC_BUTTONS.length; i++) {
 			INPUTS.put(CALC_BUTTONS[i], new JButton(CALC_BUTTONS[i]));
@@ -102,20 +88,7 @@ public class Calculator implements ActionListener  {
 			button.setFocusable(false);
 		});
 
-		for(int i = 0; i < SETTINGS_BUTTONS.length; i++) {
-			BUTTON_INPUTS.put(SETTINGS_BUTTONS[i], new JButton(SETTINGS_BUTTONS[i]));
-		}
-
-        
-        BUTTON_INPUTS.forEach((name, button) -> {
-			SETTINGS_BUTTON_PANEL.add(button);
-			button.addActionListener(this);
-			button.setBackground(Color.decode("#eedeb5"));
-			button.setFocusable(false);
-		});
-
-		BUTTON_INPUTS.get("C").setBounds(245, 5, 25, 25);
-
+		
 		INPUTS.get("1").setBounds(10, 88, 60, 34);
 		INPUTS.get("2").setBounds(75, 88, 60, 34);
 		INPUTS.get("3").setBounds(140, 88, 60, 34);
@@ -199,6 +172,11 @@ public class Calculator implements ActionListener  {
 			if(e.getSource() == SETTINGS_PAGE) {
 				LAYOUT.show(CONTAINER, "2");
 			}
+
+			if(e.getSource() == buttonInputs.get("C")) {
+				LAYOUT.show(CONTAINER, "1"); 
+			}
+
 
 		});
 
