@@ -17,8 +17,8 @@ public class Calculator extends SettingsPage  {
 	JPanel container, calculator, buttoPanel;
 	JButton settingsPage;
 	HashMap<String,JButton> inputs;
-	
-	static final String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","clr","+","-","*","/","."};
+
+	static final String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","AC","+","-","*","/","."};
 
 	double varable1 = 0;
 	double varable2 = 0; 
@@ -60,9 +60,9 @@ public class Calculator extends SettingsPage  {
 		calculator.add(buttoPanel);
 		calculator.add(settingsPage);
 	
-		displayWindow.setBounds(35, 25, 225, 34);
+		displayWindow.setBounds(35, 25, 225, 28);
 		displayWindow.setVisible(true);
-		displayWindow.setFont(new Font("Serif",Font.BOLD, 18));
+		displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 15));
 
 		buttoPanel.setBounds(10, 84, 275, 210);
 		buttoPanel.setBackground(Color.decode("#343b4a"));
@@ -99,7 +99,7 @@ public class Calculator extends SettingsPage  {
 		inputs.get("9").setBounds(140, 10, 60, 34);
 		inputs.get("0").setBounds(10, 127, 60, 34);
 		inputs.get("=").setBounds(10, 166, 255, 34);
-		inputs.get("clr").setBounds(140, 127, 60, 34);
+		inputs.get("AC").setBounds(140, 127, 60, 34);
 		inputs.get("+").setBounds(205, 127, 60, 34);
 		inputs.get("-").setBounds(205, 88, 60, 34);
 		inputs.get("*").setBounds(205, 49, 60, 34);
@@ -161,7 +161,7 @@ public class Calculator extends SettingsPage  {
 
 						displayWindow.setText(String.valueOf(result));
 					break;
-					case "clr":
+					case "AC":
 						displayWindow.setText("");
 					break;
 					default: displayWindow.setText(displayWindow.getText().concat(String.valueOf(name)));
