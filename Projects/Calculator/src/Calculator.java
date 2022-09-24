@@ -18,7 +18,7 @@ public class Calculator extends SettingsPage  {
 	JButton settingsPage;
 	HashMap<String,JButton> inputs;
 
-	static final String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","AC","+","-","*","/","."};
+	static final String[] CALC_BUTTONS = {"0","1","2","3","4","5","6","7","8","9","=","AC","+","-","*","/",".","sqrt","x^2","x^3","%"};
 
 	double varable1 = 0;
 	double varable2 = 0; 
@@ -60,19 +60,20 @@ public class Calculator extends SettingsPage  {
 		calculator.add(buttoPanel);
 		calculator.add(settingsPage);
 	
-		displayWindow.setBounds(35, 25, 225, 28);
+		displayWindow.setBounds(10, 8, 241, 29);
 		displayWindow.setVisible(true);
 		displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 15));
 
-		buttoPanel.setBounds(10, 84, 275, 210);
+		buttoPanel.setBounds(10, 45, 275, 249);
 		buttoPanel.setBackground(Color.decode("#343b4a"));
 		buttoPanel.setVisible(true);
 		buttoPanel.setLayout(null);
 
-		settingsPage.setBounds(265, 5, 25, 25);
+		settingsPage.setBounds(256, 8, 29, 29);
 		settingsPage.setBackground(Color.decode("#eedeb5"));
 		settingsPage.addActionListener(this);
 		settingsPage.setFocusable(false);
+		settingsPage.setFont(new Font("Comic Sans MS",Font.PLAIN,5));
 
 		
 
@@ -88,23 +89,27 @@ public class Calculator extends SettingsPage  {
 		});
 
 		
-		inputs.get("1").setBounds(10, 88, 60, 34);
-		inputs.get("2").setBounds(75, 88, 60, 34);
-		inputs.get("3").setBounds(140, 88, 60, 34);
-		inputs.get("4").setBounds(10, 49, 60, 34);
-		inputs.get("5").setBounds(75, 49, 60, 34);
-		inputs.get("6").setBounds(140, 49, 60, 34);
-		inputs.get("7").setBounds(10, 10, 60, 34);
-		inputs.get("8").setBounds(75, 10, 60, 34);
-		inputs.get("9").setBounds(140, 10, 60, 34);
-		inputs.get("0").setBounds(10, 127, 60, 34);
-		inputs.get("=").setBounds(10, 166, 255, 34);
-		inputs.get("AC").setBounds(140, 127, 60, 34);
-		inputs.get("+").setBounds(205, 127, 60, 34);
-		inputs.get("-").setBounds(205, 88, 60, 34);
-		inputs.get("*").setBounds(205, 49, 60, 34);
-		inputs.get("/").setBounds(205, 10, 60, 34);
-		inputs.get(".").setBounds(75, 127, 60, 34);
+		inputs.get("1").setBounds(10, 127, 60, 34);
+		inputs.get("2").setBounds(75, 127, 60, 34);
+		inputs.get("3").setBounds(140, 127, 60, 34);
+		inputs.get("4").setBounds(10, 88, 60, 34);
+		inputs.get("5").setBounds(75, 88, 60, 34);
+		inputs.get("6").setBounds(140, 88, 60, 34);
+		inputs.get("7").setBounds(10, 49, 60, 34);
+		inputs.get("8").setBounds(75, 49, 60, 34);
+		inputs.get("9").setBounds(140, 49, 60, 34);
+		inputs.get("0").setBounds(10, 166, 60, 34);
+		inputs.get("=").setBounds(10, 205, 255, 34);
+		inputs.get("AC").setBounds(140, 166, 60, 34);
+		inputs.get("+").setBounds(205, 166, 60, 34);
+		inputs.get("-").setBounds(205, 127, 60, 34);
+		inputs.get("*").setBounds(205, 88, 60, 34);
+		inputs.get("/").setBounds(205, 49, 60, 34);
+		inputs.get(".").setBounds(75, 166, 60, 34);
+		inputs.get("sqrt").setBounds(10, 10, 60, 34);
+		inputs.get("x^2").setBounds(75, 10, 60, 34);
+		inputs.get("x^3").setBounds(140, 10, 60, 34);
+		inputs.get("%").setBounds(205, 10, 60, 34);
 
 	}
 
@@ -159,6 +164,26 @@ public class Calculator extends SettingsPage  {
 							break;
 						}
 
+						displayWindow.setText(String.valueOf(result));
+					break;
+					case "x^2":
+						varable1 = Double.parseDouble(displayWindow.getText());
+						result = varable1*varable1;
+						displayWindow.setText(String.valueOf(result));
+					break;
+					case "x^3":
+						varable1 = Double.parseDouble(displayWindow.getText());
+						result = varable1*varable1*varable1;
+						displayWindow.setText(String.valueOf(result));
+					break;
+					case "sqrt":
+						varable1 = Double.parseDouble(displayWindow.getText());
+						result = Math.sqrt(varable1);
+						displayWindow.setText(String.valueOf(result));
+					break;
+					case "%":
+						varable1 = Double.parseDouble(displayWindow.getText());
+						result = varable1/100;
 						displayWindow.setText(String.valueOf(result));
 					break;
 					case "AC":
