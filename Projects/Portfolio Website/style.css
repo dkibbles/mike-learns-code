@@ -1,0 +1,50 @@
+
+ body {
+    background: rgb(4, 149, 239);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(19, 132, 202);
+    margin: 0px;
+    padding: 0px;
+    height: 50px;
+    border: 0px;
+}
+
+nav {
+    background: rgb(14, 126, 196);
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    float: right;
+    display: flex;
+    
+}
+
+main {
+    background: rgb(27,161,226);
+    margin: 0;
+    padding: 0;
+    height:300px;
+} 
+
+.projects {
+    background: rgb(78,76,43);
+    margin: 0;
+    padding: 0;
+    width: 50;
+    height: 300px;
+}
+
+footer {
+    background: rgb(135,121,78);
+    margin: 0;
+    padding: 0;
+    height: 30px;
+}
+
+.navbutton {
+    justify-content: center;
+}
