@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.awt.CardLayout;
 
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -63,7 +62,7 @@ public class Calculator extends SettingsPage  {
 	
 		displayWindow.setBounds(10, 8, 241, 29);
 		displayWindow.setVisible(true);
-		displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 15));
+		displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 16));
 
 		buttonPanel.setBounds(10, 45, 275, 249);
 		buttonPanel.setBackground(Color.decode("#042630"));
@@ -204,8 +203,8 @@ public class Calculator extends SettingsPage  {
 
 			if(e.getSource() == colorSettings) {
 				
-				String message = (String)colorSettings.getSelectedItem();
-				switch (message) {
+				String color = (String)colorSettings.getSelectedItem();
+				switch (color) {
 					case "Red":
 						calculator.setBackground(Color.decode("#FA8072"));
 						buttonPanel.setBackground(Color.decode("#7E191B"));
@@ -232,6 +231,38 @@ public class Calculator extends SettingsPage  {
 						settingsButtonsPanel.setBackground(Color.decode("#0d2901"));
 						button.setBackground(Color.decode("#b4d351"));
 						buttonInputs.get("C").setBackground(Color.decode("#b4d351"));
+					break;
+				}
+			}
+
+			if(e.getSource() == fontSize) {
+
+				int fontS = (int)colorSettings.getSelectedItem();
+				switch (fontS) {
+					case 12:
+						displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 12));
+					break;
+					case 16:
+						displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 16));
+					break;
+					case 20:
+						displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 20));
+					break;
+				}
+			}
+
+			if(e.getSource() == fontColor) {
+
+				String fontC = (String)colorSettings.getSelectedItem();
+				switch (fontC) {
+					case "Red":
+						displayWindow.setForeground(Color.decode("#7E19B"));
+					break;
+					case "Blue":
+						displayWindow.setForeground(Color.decode("#042630"));
+					break;
+					case "Green":
+						displayWindow.setForeground(Color.decode("#0d2901"));
 					break;
 				}
 			}
