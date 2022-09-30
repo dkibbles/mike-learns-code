@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.awt.CardLayout;
 
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -14,7 +15,7 @@ public class Calculator extends SettingsPage  {
 
 	JFrame frame;
 	JTextField displayWindow; 
-	JPanel container, calculator, buttoPanel;
+	JPanel container, calculator, buttonPanel;
 	JButton settingsPage;
 	HashMap<String,JButton> inputs;
 
@@ -33,7 +34,7 @@ public class Calculator extends SettingsPage  {
 		container = new JPanel(new CardLayout());
 		layout = new CardLayout();
 		calculator = new JPanel();
-		buttoPanel = new JPanel();
+		buttonPanel = new JPanel();
 		displayWindow = new JTextField();
 		settingsPage = new JButton("S");
 
@@ -54,23 +55,23 @@ public class Calculator extends SettingsPage  {
 		layout.show(container, "1");
 
 		calculator.setBounds(0, 0, 295, 304);
-		calculator.setBackground(Color.decode("#b1bec5"));
+		calculator.setBackground(Color.decode("#86b9b0"));
 		calculator.setLayout(null);
 		calculator.add(displayWindow);
-		calculator.add(buttoPanel);
+		calculator.add(buttonPanel);
 		calculator.add(settingsPage);
 	
 		displayWindow.setBounds(10, 8, 241, 29);
 		displayWindow.setVisible(true);
 		displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 15));
 
-		buttoPanel.setBounds(10, 45, 275, 249);
-		buttoPanel.setBackground(Color.decode("#343b4a"));
-		buttoPanel.setVisible(true);
-		buttoPanel.setLayout(null);
+		buttonPanel.setBounds(10, 45, 275, 249);
+		buttonPanel.setBackground(Color.decode("#042630"));
+		buttonPanel.setVisible(true);
+		buttonPanel.setLayout(null);
 
 		settingsPage.setBounds(256, 8, 29, 29);
-		settingsPage.setBackground(Color.decode("#eedeb5"));
+		settingsPage.setBackground(Color.decode("#d0d6d6"));
 		settingsPage.addActionListener(this);
 		settingsPage.setFocusable(false);
 		settingsPage.setFont(new Font("Comic Sans MS",Font.PLAIN,5));
@@ -82,9 +83,9 @@ public class Calculator extends SettingsPage  {
 		}
 
 		inputs.forEach((name, button) -> {
-			buttoPanel.add(button);
+			buttonPanel.add(button);
 			button.addActionListener(this);
-			button.setBackground(Color.decode("#eedeb5"));
+			button.setBackground(Color.decode("#d0d6d6"));
 			button.setFocusable(false);
 		});
 
@@ -199,6 +200,40 @@ public class Calculator extends SettingsPage  {
 
 			if(e.getSource() == buttonInputs.get("C")) {
 				layout.show(container, "1"); 
+			}
+
+			if(e.getSource() == colorSettings) {
+				
+				String message = (String)colorSettings.getSelectedItem();
+				switch (message) {
+					case "Red":
+						calculator.setBackground(Color.decode("#FA8072"));
+						buttonPanel.setBackground(Color.decode("#7E191B"));
+						settingsPage.setBackground(Color.decode("#CD5C5C"));
+						settings.setBackground(Color.decode("#FA8072"));
+						settingsButtonsPanel.setBackground(Color.decode("#420D09"));
+						button.setBackground(Color.decode("#CD5C5C"));
+						buttonInputs.get("C").setBackground(Color.decode("#CD5C5C"));
+					break;
+					case "Blue":
+						calculator.setBackground(Color.decode("#86b9b0"));
+						buttonPanel.setBackground(Color.decode("#042630"));
+						settingsPage.setBackground(Color.decode("#d0d6d6"));
+						settings.setBackground(Color.decode("#86b9b0"));
+						settingsButtonsPanel.setBackground(Color.decode("#042630"));
+						button.setBackground(Color.decode("#d0d6d6"));
+						buttonInputs.get("C").setBackground(Color.decode("#d0d6d6"));
+					break;
+					case "Green":
+						calculator.setBackground(Color.decode("#014a39"));
+						buttonPanel.setBackground(Color.decode("#0d2901"));
+						settingsPage.setBackground(Color.decode("#CD5C5C"));
+						settings.setBackground(Color.decode("#014a39"));
+						settingsButtonsPanel.setBackground(Color.decode("#0d2901"));
+						button.setBackground(Color.decode("#b4d351"));
+						buttonInputs.get("C").setBackground(Color.decode("#b4d351"));
+					break;
+				}
 			}
 
 

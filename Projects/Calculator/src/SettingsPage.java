@@ -10,7 +10,7 @@ import javax.swing.JComboBox;
 
 public class SettingsPage implements ActionListener {
 
-    String[] settingsButtons = {"C"};
+    String[] settingsButtons = {"C","Save & Change"};
     String[] colorSettingsBox = {"Blue","Green","Red"};
     String[] fontSizeBox = {"12","16","20"};
     String[] fontColorBox = {"Blue","Green","Red"};
@@ -19,6 +19,7 @@ public class SettingsPage implements ActionListener {
     HashMap<String,JButton> buttonInputs;
     JPanel settings, settingsButtonsPanel;
 
+
     SettingsPage() {
 
         settings = new JPanel();
@@ -26,7 +27,7 @@ public class SettingsPage implements ActionListener {
         colorSettings = new JComboBox<>(colorSettingsBox);
         fontSize = new JComboBox<>(fontSizeBox);
         fontColor = new JComboBox<>(fontColorBox);
-        colorSetting = new JLabel("Color:");
+        colorSetting = new JLabel("Color Scheme:");
         fontSizeSetting = new JLabel("Font Size:");
         fontColorSetting = new JLabel("Font Color:");
         buttonInputs = new HashMap<>();
@@ -52,13 +53,13 @@ public class SettingsPage implements ActionListener {
         fontColorSetting.setBounds(190, 40, 65, 20);
 
         settings.setBounds(0, 0, 295, 304);
-		settings.setBackground(Color.decode("#b1bec5"));
+		settings.setBackground(Color.decode("#86b9b0"));
 		settings.setVisible(true);
 		settings.setLayout(null);
 		settings.add(settingsButtonsPanel);
 
 		settingsButtonsPanel.setBounds(10, 10, 275, 284);
-        settingsButtonsPanel.setBackground(Color.decode("#343b41"));
+        settingsButtonsPanel.setBackground(Color.decode("#042630"));
 		settingsButtonsPanel.setVisible(true);
         settingsButtonsPanel.setLayout(null);
         settingsButtonsPanel.add(colorSettings);
@@ -76,13 +77,18 @@ public class SettingsPage implements ActionListener {
         buttonInputs.forEach((name, button) -> {
 			settingsButtonsPanel.add(button);
 			button.addActionListener(this);
-			button.setBackground(Color.decode("#eedeb5"));
+			button.setBackground(Color.decode("#d0d6d6"));
 			button.setFocusable(false);
 			
 		});
 
 		buttonInputs.get("C").setBounds(245, 5, 25, 25);
+        buttonInputs.get("Save & Change").setBounds(200, 300, 70, 25);
 
+    }
+
+    public void redColorScheme() {
+        
     }
 
     @Override
