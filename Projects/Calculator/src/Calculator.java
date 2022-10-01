@@ -226,7 +226,7 @@ public class Calculator extends SettingsPage  {
 					case "Green":
 						calculator.setBackground(Color.decode("#014a39"));
 						buttonPanel.setBackground(Color.decode("#0d2901"));
-						settingsPage.setBackground(Color.decode("#CD5C5C"));
+						settingsPage.setBackground(Color.decode("#b4d351"));
 						settings.setBackground(Color.decode("#014a39"));
 						settingsButtonsPanel.setBackground(Color.decode("#0d2901"));
 						button.setBackground(Color.decode("#b4d351"));
@@ -235,9 +235,10 @@ public class Calculator extends SettingsPage  {
 				}
 			}
 
+
 			if(e.getSource() == fontSize) {
 
-				int fontS = (int)colorSettings.getSelectedItem();
+				Integer fontS = (Integer)fontSize.getSelectedItem();
 				switch (fontS) {
 					case 12:
 						displayWindow.setFont(new Font("Comic Sans MS",Font.BOLD, 12));
@@ -253,16 +254,16 @@ public class Calculator extends SettingsPage  {
 
 			if(e.getSource() == fontColor) {
 
-				String fontC = (String)colorSettings.getSelectedItem();
+				String fontC = (String)fontColor.getSelectedItem();
 				switch (fontC) {
 					case "Red":
-						displayWindow.setForeground(Color.decode("#7E19B"));
+						displayWindow.setForeground(new Color(255,0,0));
 					break;
 					case "Blue":
-						displayWindow.setForeground(Color.decode("#042630"));
+						displayWindow.setForeground(new Color(0,0,255));
 					break;
 					case "Green":
-						displayWindow.setForeground(Color.decode("#0d2901"));
+						displayWindow.setForeground(new Color(0,255,0));
 					break;
 				}
 			}
