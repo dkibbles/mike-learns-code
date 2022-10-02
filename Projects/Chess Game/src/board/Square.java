@@ -29,6 +29,11 @@ public class Square {
 
     }
 
+    @Override
+    public String toString() {
+        return "Square [occupied=" + occupied + ", color=" + color + ", coordinate=" + coordinate + "]";
+    }
+
     
 
 

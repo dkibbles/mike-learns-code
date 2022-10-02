@@ -19,4 +19,11 @@ public class squareCoordinates {
     public Integer getRank() {
         return rank;
     }
+
+    @Override
+    public String toString() {
+        return "squareCoordinates [file=" + file + ", rank=" + rank + "]";
+    }
+
+    
 }
