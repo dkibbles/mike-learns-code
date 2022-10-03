@@ -13,7 +13,7 @@ public class Board {
 
             for(File file : File.values()) {
 
-                Square square = new Square(false, color, new squareCoordinates(file, -i + 8));
+                Square square = new Square(false, color, new Coordinates(file, -i + 8));
                 board[i][fileIndex] = square;
                 color = (color == squareColor.DARK) ? squareColor.LIGHT : squareColor.DARK;
                 fileIndex++;

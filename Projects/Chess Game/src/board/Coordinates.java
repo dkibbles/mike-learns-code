@@ -1,11 +1,11 @@
 package board;
 
-public class squareCoordinates {
+public class Coordinates {
     
     File file;
     Integer rank;
 
-    squareCoordinates(File file, Integer rank) {
+    Coordinates(File file, Integer rank) {
 
         this.file = file;
         this.rank = rank;
@@ -17,6 +17,7 @@ public class squareCoordinates {
     }
 
     public Integer getRank() {
+        
         return rank;
     }
 

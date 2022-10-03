@@ -6,5 +6,9 @@ public interface MovePiece {
     
     public void getValidMoves();
 
+    public void capture();
+
+    
+
 
 }

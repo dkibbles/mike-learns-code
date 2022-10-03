@@ -4,14 +4,14 @@ public class Square {
 
     boolean occupied;
     squareColor color;
-    squareCoordinates coordinate;
+    Coordinates squareCoordinate;
 
 
-    Square(boolean occupied, squareColor color, squareCoordinates coordinate) {
+    Square(boolean occupied, squareColor color, Coordinates squareCoordinate) {
 
         this.occupied = occupied;
         this.color = color;
-        this.coordinate = coordinate;
+        this.squareCoordinate = squareCoordinate;
 
     }
 
@@ -31,7 +31,7 @@ public class Square {
 
     @Override
     public String toString() {
-        return "Square [occupied=" + occupied + ", color=" + color + ", coordinate=" + coordinate + "]";
+        return "Square [occupied=" + occupied + ", color=" + color + ", coordinate=" + squareCoordinate + "]";
     }
 
     
