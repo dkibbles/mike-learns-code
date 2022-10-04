@@ -2,11 +2,11 @@ package Game;
 
 public interface MovePiece {
 
-    public void makeMove();
+    public void move();
     
     public void getValidMoves();
 
-    public void capture();
+
 
     
 

@@ -1,17 +1,21 @@
 package board;
 
+import piece.Piece;
+
 public class Square {
 
     boolean occupied;
     squareColor color;
     Coordinates squareCoordinate;
+    Piece pieceOnSquare;
 
 
-    Square(boolean occupied, squareColor color, Coordinates squareCoordinate) {
+    Square(boolean occupied, squareColor color, Coordinates squareCoordinate, Piece pieceOnSquare) {
 
         this.occupied = occupied;
         this.color = color;
         this.squareCoordinate = squareCoordinate;
+        this.pieceOnSquare = pieceOnSquare;
 
     }
 
