@@ -1,22 +1,29 @@
 package piece;
 
+import java.util.List;
+
 import Game.MovePiece;
+import board.Square;
 
 public class Bishop extends Piece implements MovePiece{
 
-    Bishop(pieceColor color, int material) {
-        super(color, material);
-        
+    public Bishop(pieceColor color, int material, Square currentSqaure) {
+        super(color, material, currentSqaure);
     }
 
     @Override
     public void move() {
-           
+        
+        
     }
 
     @Override
-    public void getValidMoves() {
-                
+    public List<Square> getCandidateMoves() {
+        
+        return null;
+        
     }
+
+    
     
 }

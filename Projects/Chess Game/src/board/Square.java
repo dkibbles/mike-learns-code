@@ -19,19 +19,43 @@ public class Square {
 
     }
 
-    public void setOccupied() {
+    
 
+    public boolean isOccupied() {
+        return occupied;
     }
 
-    public void setUnoccupied() {
 
+
+    public void setOccupied(boolean occupied) {
+        this.occupied = occupied;
     }
 
-    public boolean isSquareOccupied() {
 
-        return false;
 
+    public Coordinates getSquareCoordinate() {
+        return squareCoordinate;
     }
+
+
+
+    public void setSquareCoordinate(Coordinates squareCoordinate) {
+        this.squareCoordinate = squareCoordinate;
+    }
+
+
+
+    public Piece getPieceOnSquare() {
+        return pieceOnSquare;
+    }
+
+
+
+    public void setPieceOnSquare(Piece pieceOnSquare) {
+        this.pieceOnSquare = pieceOnSquare;
+    }
+
+
 
     @Override
     public String toString() {

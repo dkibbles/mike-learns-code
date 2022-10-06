@@ -1,12 +1,14 @@
 package piece;
 
+import java.util.List;
+
 import Game.MovePiece;
+import board.Square;
 
 public class Queen extends Piece implements MovePiece {
 
-    Queen(pieceColor color, int material) {
-        super(color, material);
-        
+    public Queen(pieceColor color, int material, Square currentSqaure) {
+        super(color, material, currentSqaure);
     }
 
     @Override
@@ -16,9 +18,10 @@ public class Queen extends Piece implements MovePiece {
     }
 
     @Override
-    public void getValidMoves() {
+    public List<Square> getCandidateMoves() {
         
-        
+        return null;
     }
-    
+
+   
 }

@@ -1,28 +1,33 @@
 package board;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Board {
 
-    Square[][] board = new Square[8][8];
+    public Square[][] boardArray = new Square[8][8];
+    Map<Square,Coordinates> squareCoordinatesMap = new HashMap<>();
 
     public Board() {
 
-        for(int i = 0; i < board.length; i++) {
+        for(int i = 0; i < boardArray.length; i++) {
 
             int fileIndex = 0;
             squareColor color = (i % 1 == 0) ? squareColor.LIGHT : squareColor.DARK;
 
             for(File file : File.values()) {
 
-                Square square = new Square(false, color, new Coordinates(file, -i + 8), null);
-                board[i][fileIndex] = square;
+                Square newSquare = new Square(false, color, new Coordinates(file, -i + 8), null);
+                boardArray[i][fileIndex] = newSquare;
                 color = (color == squareColor.DARK) ? squareColor.LIGHT : squareColor.DARK;
+                squareCoordinatesMap.put(newSquare, new Coordinates(file, -i + 8));
                 fileIndex++;
             }
         }
     }
     
     public void printBoard() {
-        for(Square[] row : board) {
+        for(Square[] row : boardArray) {
             for(Square square : row) {
                 System.out.print(square);
             }
