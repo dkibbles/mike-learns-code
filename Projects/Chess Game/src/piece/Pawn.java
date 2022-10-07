@@ -10,7 +10,7 @@ import board.Coordinates;
 
 public class Pawn extends Piece implements MovePiece{
 
-    private ArrayList<Square> candidateMoves = new ArrayList<>();
+    private ArrayList<Coordinates> candidateMoves = new ArrayList<>();
 
     Pawn(pieceColor color, int material, Square currentSquare) {
         super(color, material, currentSquare);
@@ -26,21 +26,44 @@ public class Pawn extends Piece implements MovePiece{
     }
 
     @Override
-    public ArrayList<Square> getCandidateMoves() {
+    public ArrayList<Coordinates> getCandidateMoves(Square[][] boardArray, Square newSquare) {
         
         boolean firstMove = true;
+        Square square;
+        Coordinates currentSquareCoordinate;
 
-        if(firstMove = true) {
+            if(firstMove = true) {
+
+                for(int i = 0; i < boardArray.length; i++) {
+
+                    square = this.getCurrentSquare();
+
+                    for(int j = 0; j < boardArray[i].length; j++) {
+
+                        currentSquareCoordinate = square.getSquareCoordinate();
+
+                    }
+
+                }
+
+            } else {
+
+                for(int i = 0; i < boardArray.length; i++) {
+                    for(int j = 0; j < boardArray[i].length; j++) {
+
+                    }
+
+                }
+
+            }
+
             
 
 
-        } else {
-            
-        }
-
-
-
+          
          return candidateMoves;
     }
     
+
+
 }

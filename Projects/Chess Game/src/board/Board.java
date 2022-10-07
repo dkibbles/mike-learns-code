@@ -6,7 +6,7 @@ import java.util.Map;
 public class Board {
 
     public Square[][] boardArray = new Square[8][8];
-    Map<Square,Coordinates> squareCoordinatesMap = new HashMap<>();
+    Map<Coordinates, Square> squareCoordinatesMap = new HashMap<>();
 
     public Board() {
 
@@ -20,7 +20,7 @@ public class Board {
                 Square newSquare = new Square(false, color, new Coordinates(file, -i + 8), null);
                 boardArray[i][fileIndex] = newSquare;
                 color = (color == squareColor.DARK) ? squareColor.LIGHT : squareColor.DARK;
-                squareCoordinatesMap.put(newSquare, new Coordinates(file, -i + 8));
+                squareCoordinatesMap.put(new Coordinates(file, -i + 8), newSquare);
                 fileIndex++;
             }
         }
