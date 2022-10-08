@@ -31,6 +31,8 @@ public class Pawn extends Piece implements MovePiece{
         boolean firstMove = true;
         Square square;
         Coordinates currentSquareCoordinate;
+        String file;
+        int rank;
 
             if(firstMove = true) {
 
@@ -41,6 +43,10 @@ public class Pawn extends Piece implements MovePiece{
                     for(int j = 0; j < boardArray[i].length; j++) {
 
                         currentSquareCoordinate = square.getSquareCoordinate();
+
+                        file = currentSquareCoordinate.getFile();
+                        
+                        rank = currentSquareCoordinate.getRank();
 
                     }
 

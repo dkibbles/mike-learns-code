@@ -3,6 +3,7 @@ package piece;
 import java.util.List;
 
 import Game.MovePiece;
+import board.Coordinates;
 import board.Square;
 
 public class King extends Piece implements MovePiece{
@@ -13,15 +14,19 @@ public class King extends Piece implements MovePiece{
 
     @Override
     public void move() {
-        
+        // TODO Auto-generated method stub
         
     }
 
     @Override
-    public List<Square> getCandidateMoves() {
-        
+    public List<Coordinates> getCandidateMoves(Square[][] boardArray, Square newSquare) {
+        // TODO Auto-generated method stub
         return null;
     }
+
+    
+
+   
 
     
 }

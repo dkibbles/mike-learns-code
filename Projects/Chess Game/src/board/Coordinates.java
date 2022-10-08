@@ -1,30 +1,33 @@
 package board;
 
+import java.util.HashMap;
+
 public class Coordinates {
-    
-    File file;
+
+    String file;
     Integer rank;
 
-    Coordinates(File file, Integer rank) {
+    Coordinates(String file, Integer rank) {
 
-        this.file = file;
-        this.rank = rank;
+            this.file = file;
+            this.rank = rank;
+        
 
     }
 
-    public File getFile() {
+    public String getFile() {
         return file;
     }
 
     public Integer getRank() {
-        
         return rank;
     }
 
     @Override
     public String toString() {
-        return "squareCoordinates [file=" + file + ", rank=" + rank + "]";
+        return "Coordinates [file=" + file + ", rank=" + rank + "]";
     }
 
+    
     
 }
