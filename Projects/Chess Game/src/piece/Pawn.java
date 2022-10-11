@@ -2,15 +2,17 @@ package piece;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 import Game.MovePiece;
 import board.Board;
-import board.Square;
 import board.Coordinates;
+import board.Square;
+import board.squareIndex;
 
 public class Pawn extends Piece implements MovePiece{
 
-    private ArrayList<Coordinates> candidateMoves = new ArrayList<>();
+    private ArrayList<squareIndex> candidateMoves = new ArrayList<>();
 
     Pawn(pieceColor color, int material, Square currentSquare) {
         super(color, material, currentSquare);
@@ -26,45 +28,21 @@ public class Pawn extends Piece implements MovePiece{
     }
 
     @Override
-    public ArrayList<Coordinates> getCandidateMoves(Square[][] boardArray, Square newSquare) {
+    public ArrayList<squareIndex> getCandidateMoves(Square[][] boardArray, Square newSquare, squareIndex index) {
         
         boolean firstMove = true;
         Square square;
-        Coordinates currentSquareCoordinate;
-        String file;
-        int rank;
+        squareIndex currentSquareIndex;
+        int currentFile;
+        int currentRank;
 
-            if(firstMove = true) {
-
-                for(int i = 0; i < boardArray.length; i++) {
-
-                    square = this.getCurrentSquare();
-
-                    for(int j = 0; j < boardArray[i].length; j++) {
-
-                        currentSquareCoordinate = square.getSquareCoordinate();
-
-                        file = currentSquareCoordinate.getFile();
-                        
-                        rank = currentSquareCoordinate.getRank();
-
-                    }
-
-                }
-
-            } else {
-
-                for(int i = 0; i < boardArray.length; i++) {
-                    for(int j = 0; j < boardArray[i].length; j++) {
-
-                    }
-
-                }
-
-            }
+            square = this.getCurrentSquare();
+            currentSquareIndex = square.getIndex();
+            currentFile = currentSquareIndex.getFile();
+            currentRank = currentSquareIndex.getRank();
 
             
-
+            
 
           
          return candidateMoves;

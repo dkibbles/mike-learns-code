@@ -1,7 +1,5 @@
 package board;
 
-import java.util.HashMap;
-
 public class Coordinates {
 
     String file;
@@ -28,6 +26,6 @@ public class Coordinates {
         return "Coordinates [file=" + file + ", rank=" + rank + "]";
     }
 
+    }
     
-    
-}
+

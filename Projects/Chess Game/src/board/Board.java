@@ -2,12 +2,12 @@ package board;
 
 import java.util.HashMap;
 import java.util.Map;
-import board.Coordinates;
 
 public class Board {
 
     public Square[][] boardArray = new Square[8][8];
-    Map<Coordinates, Square> squareCoordinatesMap = new HashMap<>();
+    HashMap<Coordinates, Square> squareCoordinatesMap = new HashMap<>();
+    HashMap<Square, Square> squareIndexMap = new HashMap<>();
     String[] fileArray = {"A","B","C","D","E","F","G","H"};
 
     public Board() {
@@ -19,10 +19,11 @@ public class Board {
 
             for(String file : fileArray) {
 
-                Square newSquare = new Square(false, color, new Coordinates(file, -i + 8), null);
+                Square newSquare = new Square(false, color, new Coordinates(file, -i + 8), null, new squareIndex(i, fileIndex));
                 boardArray[i][fileIndex] = newSquare;
                 color = (color == squareColor.DARK) ? squareColor.LIGHT : squareColor.DARK;
                 squareCoordinatesMap.put(new Coordinates(file, -i + 8), newSquare);
+                squareIndexMap.put(newSquare, boardArray[i][fileIndex]);
                 fileIndex++;
             }
         }
@@ -36,4 +37,10 @@ public class Board {
             System.out.println();
         }
     }
+
+    
+
+
+
+    
 }
