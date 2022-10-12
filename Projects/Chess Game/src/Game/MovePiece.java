@@ -13,7 +13,7 @@ public interface MovePiece {
 
     public void move();
     
-    public List<squareIndex> getCandidateMoves(Square[][] boardArray, Square newSquare, squareIndex index);
+    public List<squareIndex> getCandidateMoves(Square[][] boardArray, Square newSquare);
 
 
 

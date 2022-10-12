@@ -21,6 +21,374 @@ public class Square {
 
     }
 
+    public Square queenSideDirectionalOffset(Square [][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile--;
+        newRank = currentRank;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+            
+    }
+
+    public Square  kingSideDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile++;
+        newRank = currentRank;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+
+    }
+
+    public Square positiveDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile;
+        newRank = currentRank++;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+
+    }
+
+    public Square negativeDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile;
+        newRank = currentRank--;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+
+    }
+
+    public Square queenSidePositiveDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile--;
+        newRank = currentRank++;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+            
+    }
+
+    public Square kingSidePositiveDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile++;
+        newRank = currentRank++;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+
+    }
+
+    public Square queenSideNegativeDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile--;
+        newRank = currentRank--;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare;
+
+    }
+
+    public Square kingSideNegativeDirectionalOffset(Square[][] boardArray) {
+
+        Square equalityTestSquare;
+        Square newSquare;
+
+        squareIndex currentSquareIndex;
+        squareIndex newSquareIndex;
+        squareIndex equalityTestSquareIndex;
+
+        int currentFile;
+        int currentRank;
+
+        int newFile;
+        int newRank;
+
+        currentSquareIndex = this.getIndex();
+        currentFile = currentSquareIndex.getFile();
+        currentRank = currentSquareIndex.getRank();
+
+        newFile = currentFile++;
+        newRank = currentRank--;
+
+        newSquareIndex = new squareIndex(newFile, newRank);
+
+
+
+        for(int i = 0; i < boardArray.length; i++) {
+            for(int j = 0; j < boardArray[i].length; j++) {
+
+                equalityTestSquare = boardArray[i][j];
+                equalityTestSquareIndex = equalityTestSquare.getIndex();
+
+                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
+
+                        newSquare = equalityTestSquare;
+
+                    }
+
+            }
+
+        }
+
+        return newSquare; 
+
+    }
+
     
     
 

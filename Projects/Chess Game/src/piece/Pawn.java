@@ -28,19 +28,20 @@ public class Pawn extends Piece implements MovePiece{
     }
 
     @Override
-    public ArrayList<squareIndex> getCandidateMoves(Square[][] boardArray, Square newSquare, squareIndex index) {
+    public ArrayList<squareIndex> getCandidateMoves(Square[][] boardArray, Square newSquare) {
         
         boolean firstMove = true;
         Square square;
-        squareIndex currentSquareIndex;
         int currentFile;
         int currentRank;
+        squareIndex index;
+        squareIndex newIndex;
 
             square = this.getCurrentSquare();
-            currentSquareIndex = square.getIndex();
-            currentFile = currentSquareIndex.getFile();
-            currentRank = currentSquareIndex.getRank();
-
+            
+            
+            
+            
             
             
 
