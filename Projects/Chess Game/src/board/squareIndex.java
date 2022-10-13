@@ -12,8 +12,6 @@ public class squareIndex {
 
     }
 
-    
-
     public int getFile() {
         return file;
     }
@@ -29,8 +27,6 @@ public class squareIndex {
     public void setRank(int rank) {
         this.rank = rank;
     }
-
-    
 
     @Override
     public int hashCode() {

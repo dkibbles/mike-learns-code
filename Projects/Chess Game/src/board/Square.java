@@ -21,478 +21,50 @@ public class Square {
 
     }
 
-    public Square queenSideDirectionalOffset(Square [][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile--;
-        newRank = currentRank;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-            
-    }
-
-    public Square  kingSideDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile++;
-        newRank = currentRank;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-
-    }
-
-    public Square positiveDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile;
-        newRank = currentRank++;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-
-    }
-
-    public Square negativeDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile;
-        newRank = currentRank--;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-
-    }
-
-    public Square queenSidePositiveDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile--;
-        newRank = currentRank++;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-            
-    }
-
-    public Square kingSidePositiveDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile++;
-        newRank = currentRank++;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-
-    }
-
-    public Square queenSideNegativeDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile--;
-        newRank = currentRank--;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare;
-
-    }
-
-    public Square kingSideNegativeDirectionalOffset(Square[][] boardArray) {
-
-        Square equalityTestSquare;
-        Square newSquare;
-
-        squareIndex currentSquareIndex;
-        squareIndex newSquareIndex;
-        squareIndex equalityTestSquareIndex;
-
-        int currentFile;
-        int currentRank;
-
-        int newFile;
-        int newRank;
-
-        currentSquareIndex = this.getIndex();
-        currentFile = currentSquareIndex.getFile();
-        currentRank = currentSquareIndex.getRank();
-
-        newFile = currentFile++;
-        newRank = currentRank--;
-
-        newSquareIndex = new squareIndex(newFile, newRank);
-
-
-
-        for(int i = 0; i < boardArray.length; i++) {
-            for(int j = 0; j < boardArray[i].length; j++) {
-
-                equalityTestSquare = boardArray[i][j];
-                equalityTestSquareIndex = equalityTestSquare.getIndex();
-
-                    if(equalityTestSquareIndex.equals(newSquareIndex)) {
-
-                        newSquare = equalityTestSquare;
-
-                    }
-
-            }
-
-        }
-
-        return newSquare; 
-
-    }
-
-    
-    
-
-
-
     public boolean isOccupied() {
         return occupied;
     }
-
-
-
-
-
 
     public void setOccupied(boolean occupied) {
         this.occupied = occupied;
     }
 
-
-
-
-
-
     public squareColor getColor() {
         return color;
     }
-
-
-
-
-
 
     public void setColor(squareColor color) {
         this.color = color;
     }
 
-
-
-
-
-
     public Coordinates getSquareCoordinate() {
         return squareCoordinate;
     }
-
-
-
-
-
 
     public void setSquareCoordinate(Coordinates squareCoordinate) {
         this.squareCoordinate = squareCoordinate;
     }
 
-
-
-
-
-
     public Piece getPieceOnSquare() {
         return pieceOnSquare;
     }
-
-
-
-
-
 
     public void setPieceOnSquare(Piece pieceOnSquare) {
         this.pieceOnSquare = pieceOnSquare;
     }
 
-
-
-
-
-
     public squareIndex getIndex() {
         return index;
     }
-
-
-
-
-
 
     public void setIndex(squareIndex index) {
         this.index = index;
     }
 
-
-
-
-
-
     @Override
     public String toString() {
         return "Square [occupied=" + occupied + ", color=" + color + ", coordinate=" + squareCoordinate + "]";
     }
-
-
-
-
-
 
     @Override
     public int hashCode() {
@@ -505,11 +77,6 @@ public class Square {
         result = prime * result + ((index == null) ? 0 : index.hashCode());
         return result;
     }
-
-
-
-
-
 
     @Override
     public boolean equals(Object obj) {
@@ -541,11 +108,5 @@ public class Square {
             return false;
         return true;
     }
-
-    
-
-    
-
-
     
 }

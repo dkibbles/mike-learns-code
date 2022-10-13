@@ -3,7 +3,6 @@ package piece;
 import java.util.List;
 
 import Game.MovePiece;
-import board.Coordinates;
 import board.Square;
 
 public class Queen extends Piece implements MovePiece {
@@ -18,8 +17,7 @@ public class Queen extends Piece implements MovePiece {
     }
 
     @Override
-    public List<Coordinates> getCandidateMoves(Square[][] boardArray, Square newSquare) {
-        
+    public List<Square> getCandidateMoves(Square[][] boardArray, Square newSquare) {
         return null;
     }
 
