@@ -87,7 +87,6 @@ public class Pawn extends Piece implements MovePiece{
                                     candidateMoves.add(testingSquare); 
                                 }
                                 
-                                
                             }
     
                         }
@@ -97,12 +96,10 @@ public class Pawn extends Piece implements MovePiece{
                                 if(testSquarePieceColor != pieceColor) {
                                     candidateMoves.add(testingSquare); 
                                 }
-                                
-                                
+                                  
                             }
     
                         }
-
 
                     } else {
 
@@ -120,7 +117,6 @@ public class Pawn extends Piece implements MovePiece{
                                     candidateMoves.add(testingSquare); 
                                 }
                                 
-                                
                             }
     
                         }
@@ -136,16 +132,14 @@ public class Pawn extends Piece implements MovePiece{
     
                         }
 
-                    }
-
-
-                    
+                    }  
 
                 }
 
             }
           
          return candidateMoves;
+
     }
     
 
