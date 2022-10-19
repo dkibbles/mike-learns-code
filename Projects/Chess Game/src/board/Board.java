@@ -18,7 +18,7 @@ public class Board {
 
             for(String file : fileArray) {
 
-                Square newSquare = new Square(false, color, new Coordinates(file, -i + 8), null, new squareIndex(i, fileIndex));
+                Square newSquare = new Square(false, color, new Coordinates(file, -i + 8), null, new squareIndex(fileIndex, i));
                 boardArray[i][fileIndex] = newSquare;
                 color = (color == squareColor.DARK) ? squareColor.LIGHT : squareColor.DARK;
                 squareCoordinatesMap.put(new Coordinates(file, -i + 8), newSquare);
