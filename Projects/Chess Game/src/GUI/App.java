@@ -13,9 +13,8 @@ import javafx.stage.Stage;
  
 public class App extends Application {
     @Override
-    public void start(Stage primaryStage) {
-        
-  Parent root;
+    public void start(Stage primaryStage) { 
+        Parent root;
 try {
     root = FXMLLoader.load(getClass().getResource("Main.fxml"));
     Scene scene = new Scene(root);
@@ -24,7 +23,8 @@ try {
         primaryStage.setTitle("Hello World!");
         primaryStage.setScene(scene);
         primaryStage.show();
-} catch (IOException e) {
+} catch (Exception e) {
+    System.out.println(e);
 }
   
     }
