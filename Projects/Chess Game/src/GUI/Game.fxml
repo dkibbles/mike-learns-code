@@ -7,7 +7,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
    <children>
       <Button layoutX="7.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToMain" text="Home" />
@@ -130,63 +129,128 @@
       <Text layoutX="418.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/BK.gif" />
+            <Image url="@BK.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/BQ.gif" />
+            <Image url="@BQ.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/BR.gif" />
+            <Image url="@BR.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/BB.gif" />
+            <Image url="@BB.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/BN.gif" />
+            <Image url="@BN.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/BP.gif" />
+            <Image url="@BP.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/WK.gif" />
+            <Image url="@WK.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/WQ.gif" />
+            <Image url="@WQ.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/WR.gif" />
+            <Image url="@WR.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/WB.gif" />
+            <Image url="@WB.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/WN.gif" />
+            <Image url="@WN.gif" />
          </image>
       </ImageView>
       <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../Image,%20Videos%20&amp;%20Audio%20Files/WP.gif" />
+            <Image url="@WP.gif" />
          </image>
       </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="289.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free Play" />
    </children>
 </AnchorPane>

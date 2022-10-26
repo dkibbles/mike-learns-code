@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
 <SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="GUI.MainController">
@@ -10,6 +12,13 @@
          <children>
             <Button layoutX="62.0" layoutY="187.0" mnemonicParsing="false" onAction="#switchToGame" text="Play Chess" />
          </children></AnchorPane>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="398.4" fitWidth="417.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@download.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
   </items>
 </SplitPane>
