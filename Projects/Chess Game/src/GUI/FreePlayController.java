@@ -10,16 +10,16 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
-public class MainController {
+public class FreePlayController {
 
     private Stage stage;
     private Scene scene;
     private Parent root;
 
     @FXML
-    void switchToGame(ActionEvent event) throws IOException {
+    void switchToMain(ActionEvent event) throws IOException {
 
-        Parent root = FXMLLoader.load(getClass().getResource("Game.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -27,6 +27,5 @@ public class MainController {
 
 
     }
-
-
+    
 }

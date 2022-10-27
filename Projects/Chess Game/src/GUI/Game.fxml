@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FreePlayController">
    <children>
       <Button layoutX="7.0" layoutY="11.0" mnemonicParsing="false" onAction="#switchToMain" text="Home" />
       <Rectangle fill="#b50ea4" height="280.0" layoutX="160.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="280.0" />
@@ -127,62 +127,62 @@
       <Text layoutX="350.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F" />
       <Text layoutX="383.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G" />
       <Text layoutX="418.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="95.0" onDragDetected="#newBlackKing" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@BK.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="130.0" onDragDetected="#newBlackQueen" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@BQ.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="165.0" onDragDetected="#newBlackRook" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@BR.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="200.0" onDragDetected="#newBlackBishop" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@BB.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="235.0" onDragDetected="#newBlackKnight" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@BN.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="90.0" layoutY="270.0" onDragDetected="#newBlackPawn" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@BP.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="95.0" onDragDetected="#newWhiteKing" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@WK.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="130.0" onDragDetected="#newWhiteQueen" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@WQ.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="165.0" onDragDetected="#newWhiteRook" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@WR.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="200.0" onDragDetected="#newWhiteBishop" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@WB.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="235.0" onDragDetected="#newWhiteKnight" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@WN.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="475.0" layoutY="270.0" onDragDetected="#newWhitePawn" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@WP.gif" />
          </image>
