@@ -15,7 +15,8 @@ header {
 }
 
 .code-image {
-    max-width: 100%;
+    width: 100%;
+    margin: auto;
 }
 
 nav {
@@ -33,7 +34,7 @@ nav {
     height: 25px;
     line-height: 25px;
     text-align: center;
-    float: right; 
+    margin: auto;
     border: 3px dotted #ff0400;
 }
 
@@ -48,6 +49,7 @@ nav {
     border: 0px;
     height: 400px;
     border: 3px dotted #f6ff00;
+    float: left;
 }
 
 .work {
@@ -57,17 +59,14 @@ nav {
     border: 0px;
     height: 275px;
     border: 3px dotted #f6ff00;
-}
-
-.work-grid {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
-    border: 3px dotted #00d0ff;
 }
 
 .work-type {
     border: 3px dotted #d900ff;
+    float: left;
 }
 
 footer {
@@ -75,4 +74,8 @@ footer {
     margin: 0;
     padding: 0;
     height: 50px;
+}
+
+.profile-pic {
+    float: left;
 }

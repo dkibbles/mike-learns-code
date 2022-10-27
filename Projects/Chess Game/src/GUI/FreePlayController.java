@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
@@ -28,4 +29,64 @@ public class FreePlayController {
 
     }
     
+    @FXML
+    void newBlackBishop(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newBlackKing(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newBlackKnight(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newBlackPawn(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newBlackQueen(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newBlackRook(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newWhiteBishop(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newWhiteKing(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newWhiteKnight(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newWhitePawn(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newWhiteQueen(MouseEvent event) {
+
+    }
+
+    @FXML
+    void newWhiteRook(MouseEvent event) {
+
+    }
+
 }
