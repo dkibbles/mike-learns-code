@@ -187,70 +187,70 @@
             <Image url="@WP.gif" />
          </image>
       </ImageView>
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="60.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="95.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="130.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="165.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="200.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="235.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="270.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="160.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="195.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="230.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="265.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="300.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="335.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="370.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="405.0" layoutY="305.0" onMouseClicked="#addAndRemovePiece" pickOnBounds="true" preserveRatio="true" />
       <Text layoutX="289.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Free Play" />
    </children>
 </AnchorPane>

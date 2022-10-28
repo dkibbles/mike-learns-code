@@ -28,6 +28,11 @@ public class FreePlayController {
 
 
     }
+
+    @FXML
+    void addAndRemovePiece(MouseEvent event) {
+
+    }
     
     @FXML
     void newBlackBishop(MouseEvent event) {
