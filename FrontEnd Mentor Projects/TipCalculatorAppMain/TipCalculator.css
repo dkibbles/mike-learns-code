@@ -1,0 +1,236 @@
+.body {
+    background-color: hsl(185, 14%, 84%);
+}
+
+.card {
+    width: 485px;
+    height: 250px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid hsl(0,0%,100%);
+    border-radius: 10px;
+    background-color: hsl(0,0%,100%);
+}
+
+.input {
+    width: 220px;
+    height: 220px;
+    margin: 15px
+}
+
+.output {
+    width: 220px;
+    height: 220px;
+    margin: 15px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+
+.bill-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: hsl(186,14%,43%);
+}   
+
+.bill-input {
+    border: 1px solid hsl(189, 41%, 97%);
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.cash-logo {
+    margin-right: auto;
+    margin-left: 0;
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%);
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.input-data {
+    margin-right: 0;
+    margin-left: auto;
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%);
+    padding-right: 10px;
+}
+
+.select-tip-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: hsl(186,14%,43%);
+}
+
+.tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.five {
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(0,0%,100%);
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+}
+
+.ten {
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(0,0%,100%);
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+}
+
+.fifteen {
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(0,0%,100%);
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+}
+
+.twentyfive {
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(0,0%,100%);
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+}
+
+.fifty {
+    border: 1px solid hsl(183, 100%, 15%);
+    border-radius: 3px;
+    background-color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(0,0%,100%);
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+}
+
+.custom {
+    border: 1px solid hsl(189, 41%, 97%);
+    border-radius: 3px;
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 400;
+    color: hsl(186,14%,43%);
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+}
+
+.num-people-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: hsl(186,14%,43%);
+}
+
+.num-people-input {
+    border: 5px solid hsl(189, 41%, 97%);
+    border-radius: 5px;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.person-logo {
+    margin-right: auto;
+    margin-left: 0;
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%)
+}
+
+.input-data {
+    margin-right: 0;
+    margin-left: auto;
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%);
+}
+
+.tip-amount {
+    margin: 1.5rem;
+    display: flex;
+}
+
+.tip-amount-text {
+    font-family: 'Space Mono', monospace;
+    color: hsl(0,0%,100%);
+    font-size: 11px;
+
+}
+
+.person {
+    font-family: 'Space Mono', monospace;
+    color: hsl(0,0%,100%);
+    font-size: 11px;
+}
+
+.tip-amount-output {
+    font-family: 'Space Mono', monospace;
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.total {
+    margin: 1.5rem;
+    display: flex;
+}
+
+.total-text {
+    font-family: 'Space Mono', monospace;
+    color: hsl(0,0%,100%);
+    font-size: 11px;
+}
+
+.total-output {
+    font-family: 'Space Mono', monospace;
+    color: hsl(172, 67%, 45%);
+    font-size: 24px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.reset {
+    margin: 1.5rem;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    font-size: 11px;
+    border: 1px solid hsl(186, 14%, 43%);
+    border-radius: 3px;
+    background-color: hsl(186, 14%, 43%);
+    padding: 3px;
+}
