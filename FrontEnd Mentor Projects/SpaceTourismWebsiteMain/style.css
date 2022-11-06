@@ -1,0 +1,67 @@
+:root {
+    --textcolor: white;
+    --textcolor2: black;
+}
+
+.body {
+    background-image: url("background-home-desktop.jpg");
+    background-size: cover;
+}
+
+.nav {
+    width: 1385px;
+    height: 96px;
+    position: absolute;
+    margin-top: 40px;
+    margin-bottom: auto;
+    margin-left: 55px;
+    margin-right: auto;
+    color: var(--textcolor);
+}
+
+.nav__bar {
+    width: 830px;
+    height: 96px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    position: absolute;
+    margin-left: 610px;
+    margin-right: auto;
+    color: var(--textcolor);
+    display: flex;
+}
+
+.content {
+    width: 450px;
+    height: 382px;
+    position: absolute;
+    margin-left: 165px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 387px;
+    color: var(--textcolor);
+}
+
+.nav__button {
+    display: flex;
+}
+
+.explore {
+    width: 274px;
+    height: 274px;
+    background-color: var(--textcolor);
+    color: var(--textcolor2);
+    border: 1px solid var(--textcolor);
+    border-radius: 137px;
+    margin-bottom: auto;
+    margin-top: 495px;
+    margin-right: 165px;
+    margin-left: auto
+}
+
+.explore__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
