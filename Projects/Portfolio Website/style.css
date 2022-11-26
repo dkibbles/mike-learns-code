@@ -145,6 +145,10 @@ nav ul {
     align-content: center;
 }
 
+.nav-button {
+    display: none;
+}
+
 /*****Hero*****/
 
 .hero {
@@ -180,6 +184,10 @@ nav ul {
 }
 
 @media (max-width: 35rem) {
+    header {
+        background-image: translateX(-100%);
+    }
+    
     nav ul {
         position: fixed;
         inset: 0 0 0 33vw;
@@ -189,6 +197,12 @@ nav ul {
         padding: 5rem 3.75rem;
         z-index: 1;
         margin: 0;
+        transform: translateX(100%);
+        transition: transform 250ms ease-out;
+    }
+
+    nav ul[data-visable="true"] {
+        transform: translateX(0%);
     }
 
     nav ul li {
@@ -197,12 +211,14 @@ nav ul {
 
     .nav-button {
         position: absolute;
-        background-color: var(--white);
+        display: block;
+        background-color: white;
         width: 2rem;
         aspect-ratio: 1;
         top: 2rem;
         right: 2rem;
         z-index: 5;
+        border: none;
     }
 
     .button-bar {
