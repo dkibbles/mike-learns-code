@@ -133,7 +133,9 @@ header {
 nav {
     float: right;
     height: 40px;
-    width: 300px;
+    width: 30%;
+    min-width: 14rem;
+    max-width: 24rem;
 } 
 
 nav ul {
@@ -165,11 +167,13 @@ nav ul li {
 .nav-button {
     position: absolute;
     display: block;
-    background-color: white;
-    width: 2rem;
+    background: url(icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2.2rem;
     aspect-ratio: 1;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
     z-index: 5;
     border: none;
 }
