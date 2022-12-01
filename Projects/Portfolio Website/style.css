@@ -223,14 +223,16 @@ nav ul li {
     width: 100%;
     text-align: center;
     margin: 1.25rem 0;
+    color: #004F88;
 }
 
 .project-cards {
-    background-color: bisque;
+    background-color: rgb(255, 255, 255);
     gap: 1.25rem;
     margin: 2rem;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     grid-template-columns: 1fr;
+    border-radius: 1rem;
 }
 
 .card {
@@ -238,6 +240,7 @@ nav ul li {
     width: 100%;
     aspect-ratio: 1;
     position: relative;
+    border-radius: 1rem;
 }
 
 .project-description-bar {
@@ -248,6 +251,7 @@ nav ul li {
     position: absolute;
     bottom: 0;
     background-color: #004F88;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .top ,
@@ -280,9 +284,23 @@ nav ul li {
 
 .launch,
 .git-hub {
-    
+    margin: 0;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 1rem;
+    width: 60%;
+    min-width: 2.75rem;
+    height: 75%;
+    background: transparent;
+    color: white;
 }
 
+button svg {
+    color: white;
+    height: 85%;
+    aspect-ratio: 1;
+    vertical-align: middle;
+}
 /*****Contact*****/
 
 .contact {
@@ -292,6 +310,16 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.contact h1 {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: auto;
+    left: auto;
+    margin: 2rem;
 }
 
 form {
