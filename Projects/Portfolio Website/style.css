@@ -112,6 +112,9 @@ root {
 /*****Styles*****/
 /****************/
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     background: rgb(255, 255, 255);
     margin: 0;
@@ -131,11 +134,14 @@ header {
 /*****Navigation*****/
 
 nav {
-    float: right;
     height: 40px;
     width: 30%;
     min-width: 14rem;
     max-width: 24rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
 } 
 
 nav ul {
@@ -162,6 +168,18 @@ nav ul[data-visable="true"] {
 
 nav ul li {
     padding: .5rem 0;
+}
+
+li a {
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+li a:hover {
+    text-shadow: 0 0 .4rem white;
 }
 
 .nav-button {
@@ -282,6 +300,38 @@ nav ul li {
     align-items: center;
 }
 
+.top h4 {
+    font-size: .75rem;
+    font-weight: bold;
+}
+
+.html-icon {
+    color: red;
+    height: 50%;
+    aspect-ratio: 1;
+    margin: 0 .20rem;
+}
+
+.css-icon {
+    color: blue;
+    height: 50%;
+    aspect-ratio: 1;
+    margin: 0 .20rem;
+}
+
+.js-icon {
+    color: yellow;
+    height: 50%;
+    aspect-ratio: 1;
+    margin: 0 .20rem;
+}
+
+.java-icon {
+    color: black;
+    height: 50%;
+    aspect-ratio: 1;
+    margin: 0 .20rem;
+}
 .launch,
 .git-hub {
     margin: 0;
@@ -293,6 +343,14 @@ nav ul li {
     height: 75%;
     background: transparent;
     color: white;
+    font-weight: bold;
+}
+
+.launch:hover,
+.git-hub:hover {
+    text-shadow: 0 0 .4rem white;
+    box-shadow: 0 0 .25rem white, inset 0 0 .25rem white;
+
 }
 
 button svg {
@@ -364,6 +422,7 @@ textarea:valid~label {
     width: 100%;
     background: transparent;
     border: 1px solid white;
+    border-radius: .25rem;
     color: white;
 }
 
